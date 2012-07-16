@@ -48,27 +48,27 @@ AVAILABLE_LOCALES = (
 
 class ExceptionController:
     """
-    The hive site main exception controller
+    The hive site exception controller
     """
 
-    hive_site_main_plugin = None
-    """ The hive site main plugin """
+    hive_site_plugin = None
+    """ The hive site plugin """
 
-    hive_site_main = None
-    """ The hive site main """
+    hive_site = None
+    """ The hive site """
 
-    def __init__(self, hive_site_main_plugin, hive_site_main):
+    def __init__(self, hive_site_plugin, hive_site):
         """
         Constructor of the class.
 
-        @type hive_site_main_plugin: HiveSiteMainPlugin
-        @param hive_site_main_plugin: The hive site main plugin.
-        @type hive_site_main: HiveSiteMain
-        @param hive_site_main: The hive site main.
+        @type hive_site_plugin: HiveSitePlugin
+        @param hive_site_plugin: The hive site plugin.
+        @type hive_site: HiveSite
+        @param hive_site: The hive site.
         """
 
-        self.hive_site_main_plugin = hive_site_main_plugin
-        self.hive_site_main = hive_site_main
+        self.hive_site_plugin = hive_site_plugin
+        self.hive_site = hive_site
 
     def handle_exception(self, rest_request, parameters = {}):
         """

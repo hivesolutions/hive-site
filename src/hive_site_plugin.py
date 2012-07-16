@@ -37,7 +37,7 @@ __license__ = "Hive Solutions Confidential Usage License (HSCUL)"
 import colony.base.system
 import colony.base.decorators
 
-class HiveSiteMainPlugin(colony.base.system.Plugin):
+class HiveSitePlugin(colony.base.system.Plugin):
     """
     The main class for the Hive Site Main plugin.
     """
@@ -62,12 +62,12 @@ class HiveSiteMainPlugin(colony.base.system.Plugin):
         colony.base.system.PluginDependency("pt.hive.colony.plugins.format.mime", "1.x.x")
     ]
     main_modules = [
-        "hive_site_main.main.hive_site_main_exceptions",
-        "hive_site_main.main.hive_site_main_system"
+        "hive_site.exceptions",
+        "hive_site.system"
     ]
 
-    hive_site_main = None
-    """ The hive site main """
+    hive_site = None
+    """ The hive site """
 
     mvc_utils_plugin = None
     """ The web mvc utils plugin """
@@ -83,16 +83,16 @@ class HiveSiteMainPlugin(colony.base.system.Plugin):
 
     def load_plugin(self):
         colony.base.system.Plugin.load_plugin(self)
-        import hive_site_main.main.hive_site_main_system
-        self.hive_site_main = hive_site_main.main.hive_site_main_system.HiveSiteMain(self)
+        import hive_site.system
+        self.hive_site = hive_site.system.HiveSite(self)
 
     def end_load_plugin(self):
         colony.base.system.Plugin.end_load_plugin(self)
-        self.hive_site_main.load_components()
+        self.hive_site.load_components()
 
     def unload_plugin(self):
         colony.base.system.Plugin.unload_plugin(self)
-        self.hive_site_main.unload_components()
+        self.hive_site.unload_components()
 
     @colony.base.decorators.inject_dependencies
     def dependency_injected(self, plugin):
@@ -109,7 +109,7 @@ class HiveSiteMainPlugin(colony.base.system.Plugin):
         to the web mvc service.
         """
 
-        return self.hive_site_main.get_patterns()
+        return self.hive_site.get_patterns()
 
     def get_communication_patterns(self):
         """
@@ -123,7 +123,7 @@ class HiveSiteMainPlugin(colony.base.system.Plugin):
         to the web mvc service.
         """
 
-        return self.hive_site_main.get_communication_patterns()
+        return self.hive_site.get_communication_patterns()
 
     def get_resource_patterns(self):
         """
@@ -136,7 +136,7 @@ class HiveSiteMainPlugin(colony.base.system.Plugin):
         to the web mvc service.
         """
 
-        return self.hive_site_main.get_resource_patterns()
+        return self.hive_site.get_resource_patterns()
 
     @colony.base.decorators.plugin_inject("pt.hive.colony.plugins.mvc.utils")
     def set_mvc_utils_plugin(self, mvc_utils_plugin):
