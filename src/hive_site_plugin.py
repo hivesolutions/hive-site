@@ -53,12 +53,12 @@ class HiveSiteMainPlugin(colony.base.system.Plugin):
         colony.base.system.CPYTHON_ENVIRONMENT
     ]
     capabilities = [
-        "web.mvc_service"
+        "mvc_service"
     ]
     dependencies = [
         colony.base.system.PluginDependency("pt.hive.colony.plugins.mvc.utils", "1.x.x"),
-        colony.base.system.PluginDependency("pt.hive.colony.plugins.resources.resource_manager", "1.x.x"),
-        colony.base.system.PluginDependency("pt.hive.colony.plugins.main.client.smtp", "1.x.x"),
+        colony.base.system.PluginDependency("pt.hive.colony.plugins.resources.manager", "1.x.x"),
+        colony.base.system.PluginDependency("pt.hive.colony.plugins.client.smtp", "1.x.x"),
         colony.base.system.PluginDependency("pt.hive.colony.plugins.format.mime", "1.x.x")
     ]
     main_modules = [
@@ -72,11 +72,11 @@ class HiveSiteMainPlugin(colony.base.system.Plugin):
     mvc_utils_plugin = None
     """ The web mvc utils plugin """
 
-    resource_manager_plugin = None
-    """ The resource manager plugin """
+    resources_manager_plugin = None
+    """ The resources manager plugin """
 
-    main_client_smtp_plugin = None
-    """ The main client smtp plugin """
+    client_smtp_plugin = None
+    """ The client_smtp plugin """
 
     format_mime_plugin = None
     """ The format mime plugin """
@@ -93,15 +93,6 @@ class HiveSiteMainPlugin(colony.base.system.Plugin):
     def unload_plugin(self):
         colony.base.system.Plugin.unload_plugin(self)
         self.hive_site_main.unload_components()
-
-    def end_unload_plugin(self):
-        colony.base.system.Plugin.end_unload_plugin(self)
-
-    def load_allowed(self, plugin, capability):
-        colony.base.system.Plugin.load_allowed(self, plugin, capability)
-
-    def unload_allowed(self, plugin, capability):
-        colony.base.system.Plugin.unload_allowed(self, plugin, capability)
 
     @colony.base.decorators.inject_dependencies
     def dependency_injected(self, plugin):
@@ -147,29 +138,17 @@ class HiveSiteMainPlugin(colony.base.system.Plugin):
 
         return self.hive_site_main.get_resource_patterns()
 
-    def get_mvc_utils_plugin(self):
-        return self.mvc_utils_plugin
-
     @colony.base.decorators.plugin_inject("pt.hive.colony.plugins.mvc.utils")
     def set_mvc_utils_plugin(self, mvc_utils_plugin):
         self.mvc_utils_plugin = mvc_utils_plugin
 
-    def get_resource_manager_plugin(self):
-        return self.resource_manager_plugin
+    @colony.base.decorators.plugin_inject("pt.hive.colony.plugins.resources.manager")
+    def set_resources_manager_plugin(self, resources_manager_plugin):
+        self.resources_manager_plugin = resources_manager_plugin
 
-    @colony.base.decorators.plugin_inject("pt.hive.colony.plugins.resources.resource_manager")
-    def set_resource_manager_plugin(self, resource_manager_plugin):
-        self.resource_manager_plugin = resource_manager_plugin
-
-    def get_main_client_smtp_plugin(self):
-        return self.main_client_smtp_plugin
-
-    @colony.base.decorators.plugin_inject("pt.hive.colony.plugins.main.client.smtp")
-    def set_main_client_smtp_plugin(self, main_client_smtp_plugin):
-        self.main_client_smtp_plugin = main_client_smtp_plugin
-
-    def get_format_mime_plugin(self):
-        return self.format_mime_plugin
+    @colony.base.decorators.plugin_inject("pt.hive.colony.plugins.client.smtp")
+    def set_client_smtp_plugin(self, client_smtp_plugin):
+        self.client_smtp_plugin = client_smtp_plugin
 
     @colony.base.decorators.plugin_inject("pt.hive.colony.plugins.format.mime")
     def set_format_mime_plugin(self, format_mime_plugin):

@@ -8,16 +8,16 @@
     "description" : "The plugin that offers the hive web site",
     "version" : "1.0.0",
     "author" : "Hive Solutions Lda. <development@hive.pt>",
-    "capabilities" : ["web.mvc_service", "build_automation_item"],
+    "capabilities" : ["mvc_service", "build_automation_item"],
     "capabilities_allowed" : [],
     "dependencies" : [{
                 "id" : "pt.hive.colony.plugins.mvc.utils",
                 "version" : "1.x.x"
             }, {
-                "id" : "pt.hive.colony.plugins.resources.resource_manager",
+                "id" : "pt.hive.colony.plugins.resources.manager",
                 "version" : "1.x.x"
             }, {
-                "id" : "pt.hive.colony.plugins.main.client.smtp",
+                "id" : "pt.hive.colony.plugins.client.smtp",
                 "version" : "1.x.x"
             }, {
                 "id" : "pt.hive.colony.plugins.format.mime",

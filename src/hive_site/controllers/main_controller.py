@@ -461,8 +461,8 @@ class MainController:
         return contact_form_model
 
     def _send_contact_form_email(self, rest_request, contact_form_model):
-        # retrieves the main client smtp plugin
-        main_client_smtp_plugin = self.hive_site_main_plugin.main_client_smtp_plugin
+        # retrieves the client_smtp plugin
+        client_smtp_plugin = self.hive_site_main_plugin.client_smtp_plugin
 
         # retrieves the format mime plugin
         format_mime_plugin = self.hive_site_main_plugin.format_mime_plugin
@@ -476,8 +476,8 @@ class MainController:
         # retrieves the email attributes
         smtp_server, smtp_port, smtp_use_tls, smtp_user, smtp_password = self._get_email_attributes()
 
-        # creates a new smtp client, using the main client smtp plugin
-        smtp_client = main_client_smtp_plugin.create_client({})
+        # creates a new smtp client, using the client_smtp plugin
+        smtp_client = client_smtp_plugin.create_client({})
 
         # opens the smtp client
         smtp_client.open({})
@@ -534,15 +534,15 @@ class MainController:
             smtp_client.close({})
 
     def _get_email_attributes(self):
-        # retrieves the resource manager plugin
-        resource_manager_plugin = self.hive_site_main_plugin.resource_manager_plugin
+        # retrieves the resources manager plugin
+        resources_manager_plugin = self.hive_site_main_plugin.resources_manager_plugin
 
         # retrieves the smtp resources
-        smtp_server = resource_manager_plugin.get_resource("system.mail.smtp_server")
-        smtp_port = resource_manager_plugin.get_resource("system.mail.smtp_port")
-        smtp_use_tls = resource_manager_plugin.get_resource("system.mail.smtp_use_tls")
-        smtp_user = resource_manager_plugin.get_resource("system.mail.smtp_user")
-        smtp_password = resource_manager_plugin.get_resource("system.mail.smtp_password")
+        smtp_server = resources_manager_plugin.get_resource("system.mail.smtp_server")
+        smtp_port = resources_manager_plugin.get_resource("system.mail.smtp_port")
+        smtp_use_tls = resources_manager_plugin.get_resource("system.mail.smtp_use_tls")
+        smtp_user = resources_manager_plugin.get_resource("system.mail.smtp_user")
+        smtp_password = resources_manager_plugin.get_resource("system.mail.smtp_password")
 
         # retrieves the data from the smtp resources
         smtp_server_data = smtp_server.data
