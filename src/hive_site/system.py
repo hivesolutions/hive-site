@@ -48,10 +48,10 @@ class HiveSite(colony.base.system.System):
         """
 
         # retrieves the web mvc utils plugin
-        web_mvc_utils_plugin = self.plugin.web_mvc_utils_plugin
+        mvc_utils_plugin = self.plugin.mvc_utils_plugin
 
         # creates the models classes then creates the controllers
-        web_mvc_utils_plugin.assign_models_controllers(self, self.plugin, {})
+        mvc_utils_plugin.assign_models_controllers(self, self.plugin, {})
 
     def unload_components(self):
         """
@@ -60,11 +60,11 @@ class HiveSite(colony.base.system.System):
         """
 
         # retrieves the web mvc utils plugin
-        web_mvc_utils_plugin = self.plugin.web_mvc_utils_plugin
+        mvc_utils_plugin = self.plugin.mvc_utils_plugin
 
         # destroys the models and then destroy the controllers,
         # unregistering them from the internal structures
-        web_mvc_utils_plugin.unassign_models_controllers(self, {})
+        mvc_utils_plugin.unassign_models_controllers(self, {})
 
     def get_patterns(self):
         """
