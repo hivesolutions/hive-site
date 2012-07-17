@@ -20,7 +20,7 @@
 // __version__   = 1.0.0
 // __revision__  = $LastChangedRevision$
 // __date__      = $LastChangedDate: 2009-09-05 15:27:53 +0100 (sÃ¡b, 05 Set 2009) $
-// __copyright__ = Copyright (c) 2008 Hive Solutions Lda.
+// __copyright__ = Copyright (c) 2008-2012 Hive Solutions Lda.
 // __license__   = GNU General Public License (GPL), Version 3
 
 /**
