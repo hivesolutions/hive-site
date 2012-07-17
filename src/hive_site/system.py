@@ -47,7 +47,7 @@ class HiveSite(colony.base.system.System):
         This load should occur only after the dependencies are loaded.
         """
 
-        # retrieves the web mvc utils plugin
+        # retrieves the mvc utils plugin
         mvc_utils_plugin = self.plugin.mvc_utils_plugin
 
         # creates the models classes then creates the controllers
@@ -59,7 +59,7 @@ class HiveSite(colony.base.system.System):
         This load should occur the earliest possible in the unloading process.
         """
 
-        # retrieves the web mvc utils plugin
+        # retrieves the mvc utils plugin
         mvc_utils_plugin = self.plugin.mvc_utils_plugin
 
         # destroys the models and then destroy the controllers,

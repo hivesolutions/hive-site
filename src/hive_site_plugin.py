@@ -70,7 +70,7 @@ class HiveSitePlugin(colony.base.system.Plugin):
     """ The hive site """
 
     mvc_utils_plugin = None
-    """ The web mvc utils plugin """
+    """ The mvc utils plugin """
 
     resources_manager_plugin = None
     """ The resources manager plugin """

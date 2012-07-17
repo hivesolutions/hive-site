@@ -36,7 +36,6 @@ __license__ = "Hive Solutions Confidential Usage License (HSCUL)"
 
 import colony.libs.import_util
 
-# runs the external imports
 models = colony.libs.import_util.__import__("models")
 
 class ContactForm(models.Model):
