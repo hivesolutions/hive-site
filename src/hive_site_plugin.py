@@ -101,12 +101,12 @@ class HiveSitePlugin(colony.base.system.Plugin):
     def get_patterns(self):
         """
         Retrieves the tuple of regular expressions to be used as patterns,
-        to the web mvc service. The tuple should relate the route with the handler
+        to the mvc service. The tuple should relate the route with the handler
         method/function.
 
         @rtype: Tuple
         @return: The tuple of regular expressions to be used as patterns,
-        to the web mvc service.
+        to the mvc service.
         """
 
         return self.hive_site.get_patterns()
@@ -114,13 +114,13 @@ class HiveSitePlugin(colony.base.system.Plugin):
     def get_communication_patterns(self):
         """
         Retrieves the tuple of regular expressions to be used as communication patterns,
-        to the web mvc service. The tuple should relate the route with a tuple
+        to the mvc service. The tuple should relate the route with a tuple
         containing the data handler, the connection changed handler and the name
         of the connection.
 
         @rtype: Tuple
         @return: The tuple of regular expressions to be used as communication patterns,
-        to the web mvc service.
+        to the mvc service.
         """
 
         return self.hive_site.get_communication_patterns()
@@ -128,12 +128,12 @@ class HiveSitePlugin(colony.base.system.Plugin):
     def get_resource_patterns(self):
         """
         Retrieves the tuple of regular expressions to be used as resource patterns,
-        to the web mvc service. The tuple should relate the route with the base
+        to the mvc service. The tuple should relate the route with the base
         file system path to be used.
 
         @rtype: Tuple
         @return: The tuple of regular expressions to be used as resource patterns,
-        to the web mvc service.
+        to the mvc service.
         """
 
         return self.hive_site.get_resource_patterns()
