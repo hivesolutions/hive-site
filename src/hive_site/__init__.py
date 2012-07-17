@@ -25,7 +25,7 @@ __revision__ = "$LastChangedRevision$"
 __date__ = "$LastChangedDate$"
 """ The last change date of the module """
 
-__copyright__ = "Copyright (c) 2010 Hive Solutions Lda."
+__copyright__ = "Copyright (c) 2010-2012 Hive Solutions Lda."
 """ The copyright for the module """
 
 __license__ = "Hive Solutions Confidential Usage License (HSCUL)"
