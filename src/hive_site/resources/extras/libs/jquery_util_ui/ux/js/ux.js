@@ -1,5 +1,5 @@
 // Hive UX Framework
-// Copyright (C) 2010 Hive Solutions Lda.
+// Copyright (C) 2010-2012 Hive Solutions Lda.
 //
 // This file is part of Hive UX Framework.
 //
@@ -14689,7 +14689,7 @@ jQuery(document).ready(function() {
         });
 
 // Hive Colony Framework
-// Copyright (C) 2008 Hive Solutions Lda.
+// Copyright (C) 2008-2012 Hive Solutions Lda.
 //
 // This file is part of Hive Colony Framework.
 //
@@ -14815,7 +14815,7 @@ Date.prototype.getTimeZoneStructure = function() {
 }
 
 // Hive Colony Framework
-// Copyright (C) 2008 Hive Solutions Lda.
+// Copyright (C) 2008-2012 Hive Solutions Lda.
 //
 // This file is part of Hive Colony Framework.
 //
