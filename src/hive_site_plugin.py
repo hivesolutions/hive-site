@@ -43,8 +43,7 @@ class HiveSitePlugin(colony.base.system.Plugin):
     """
 
     id = "pt.hive.cronus.plugins.hive_site"
-    name = "Hive Site Main Plugin"
-    short_name = "Hive Site Main"
+    name = "Hive Site"
     description = "The plugin that offers the hive web site"
     version = "1.0.0"
     author = "Hive Solutions Lda. <development@hive.pt>"
