@@ -123,7 +123,7 @@ class HiveSite(colony.base.system.System):
         # retrieves the plugin manager
         plugin_manager = self.plugin.manager
 
-        # retrieves the hive site plugin path
+        # retrieves the plugin path
         plugin_path = plugin_manager.get_plugin_path_by_id(self.plugin.id)
 
         return (
