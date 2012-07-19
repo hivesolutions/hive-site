@@ -68,7 +68,7 @@
                     Chamamos-lhe <b>Social Invoicing</b>.<br/>
                     <br/>
                     Usamos HTML5, CSS3 e JavaScript, juntamente com jQuery e o <b>nosso próprio conjunto de plugins de UI</b> para jQuery.
-                    No lado do servidor usamos a <b><a href="http://getcolony.com/docs/colony/documentation_colony_web_mvc.html">stack de Colony MVC</a></b>.
+                    No lado do servidor usamos a <b><a href="http://getcolony.com">stack de Colony MVC</a></b>.
                     Desenvolvemos uma App para iOS, que tira partido da nossa <b><a href="https://github.com/hivesolutions/commons_ui_mobile">Commons Library</a></b> para aplicações móveis nativas.<br/>
                 </p>
                 <div class="portfolio-separator"></div>
@@ -164,7 +164,7 @@
                     <br/>
                     O Blog tentou reduzir o conjunto de funcionalidades ao absolutamente essencial para <b>servir os nossos propósitos</b>, pelo que decidimos não o disponibilizar com um projecto open source.<br/>
                     <br/>
-                    O The Diary foi desenvolvido em Colony, e está construído como um plugin de <b><a href="http://getcolony.com/docs/colony/documentation_colony_web_mvc.html">Web MVC</a></b>.
+                    O The Diary foi desenvolvido em Colony, e está construído como um plugin de <b><a href="http://getcolony.com">Web MVC</a></b>.
                     Utiliza componentes como o <b>plugin de CAPTCHA de Colony</b> para proteger algumas acções com testes de Turing. Utiliza também os plugins de OpenID, Twitter e Facebook para fornecer <b>single sign-on</b> nestas plataformas.
                 </p>
                 <div class="portfolio-separator"></div>
@@ -208,7 +208,7 @@
                     <br/>
                     À La Carte tem um vocabulário específico do domínio, que usa para estruturar informação desestruturada sobre restaurantes e pratos, e <b>inferir relações entre conceitos</b>, de forma semântica. O serviço também oferece um motor de recomendações, baseado em preferências pessoais e colectivas.<br/>
                     <br/>
-                    À La Carte foi construído usando HTML5, CSS3 e JavaScript. No server side utilizamos a <b><a href="http://getcolony.com/docs/colony/documentation_colony_web_mvc.html">stack MVC de Colony</a></b> bem como a infra-estrutura de <b>pesquisa textual do Colony</b>.
+                    À La Carte foi construído usando HTML5, CSS3 e JavaScript. No server side utilizamos a <b><a href="http://getcolony.com">stack MVC de Colony</a></b> bem como a infra-estrutura de <b>pesquisa textual do Colony</b>.
                 </p>
                 <div class="portfolio-separator"></div>
             </div>

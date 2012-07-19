@@ -69,7 +69,7 @@
                     We called it <b>Social Invoicing</b>.<br/>
                     <br/>
                     We used HTML5, CSS3 and JavaScript, together with jQuery and our <b>own set of UI plugins</b> for jQuery.
-                    In the server side we use the <b><a href="http://getcolony.com/docs/colony/documentation_colony_web_mvc.html">Colony MVC stack</a></b>.<br/>
+                    In the server side we use the <b><a href="http://getcolony.com">Colony MVC stack</a></b>.<br/>
                     The iOS app leverages our <b><a href="https://github.com/hivesolutions/commons_ui_mobile">Commons Library</a></b>, to speed up development of mobile CRUD applications (as well as provide some pretty UI components).<br/>
                 </p>
                 <div class="portfolio-separator"></div>
@@ -163,7 +163,7 @@
                     <br/>
                     The blog narrowed down the set features that would <b>serve our purposes</b>, so we decided not to make it available as an open source project.<br/>
                     <br/>
-                    The Diary is powered by Colony, and is built as a <b><a href="http://getcolony.com/docs/colony/documentation_colony_web_mvc.html">Web MVC</a></b> Plugin.
+                    The Diary is powered by Colony, and is built as a <b><a href="http://getcolony.com">Web MVC</a></b> Plugin.
                     It uses Colony components such as the <b>Colony CAPTCHA</b> plugin for some Turing test protected actions; and the OpenID, Twitter and Facebook plugins for <b>single sign-on</b>.
                 </p>
                 <div class="portfolio-separator"></div>
@@ -212,7 +212,7 @@
                     The service also features a recommendation engine, based on personal and collective preferences.<br/>
                     <br/>
                     À La Carte was built using HTML5, CSS3 and JavaScript.
-                    In the server side we used the <b><a href="http://getcolony.com/docs/colony/documentation_colony_web_mvc.html">Colony MVC stack</a></b>, as well as <b>Colony's full-text search</b> infrastructure.
+                    In the server side we used the <b><a href="http://getcolony.com">Colony MVC stack</a></b>, as well as <b>Colony's full-text search</b> infrastructure.
                 </p>
                 <div class="portfolio-separator"></div>
             </div>
