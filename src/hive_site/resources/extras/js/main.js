@@ -47,8 +47,8 @@ jQuery(document).ready(function() {
     // creates the slideshow
     jQuery("#screenshots-button").slideshow({
         screenshotsPrefix : "resources/screenshots/",
-        screenshots : ["omni-screen-1.jpg", "omni-screen-2.jpg",
-                "omni-screen-3.jpg", "omni-screen-4.jpg"]
+        screenshots : ["frontdoor_1.png", "frontdoor_2.png",
+                "frontdoor_3.png", "frontdoor_4.png", "frontdoor_5.png"]
     });
 
     // retrieves the portfolio slider contents

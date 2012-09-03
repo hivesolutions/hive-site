@@ -5,7 +5,7 @@
     <h1>EXIJA ALGO DIFERENTE</h1>
     <h4>Soluções de software únicas para o seu negócio</h4>
     <p>A Hive Solutions é uma <b>nova geração de consultora</b>: mantemos as coisas simples, eliminando trabalho desnecessário de modo a irmos direitos ao assunto.</p>
-    <p><b>Ouvimos</b>, <b>pensamos</b>, <b>criamos</b>, e <b>entregamos</b>. Para descobrir mais sobre a nossa filosofia de consultoria clique <a href="consulting"><b>aqui</b></a>.</p>
+    <p>O nosso foco é construir aplicações atraentes para a <a href="saas"><b>Web</b></a> e <a href="mobile"><b>Mobile</b></a>. Para saber mais sobre os nossos serviços de consultoria, clique <a href="consulting">aqui</a>.</p>
     <p>Tem um problema? Precisa de ajuda a descobrir ou implementar uma solução? Tem uma ideia, mas não tem os recursos?<br />
     <a href="contact"><b>Fale connosco</b></a>, podemos ajudá-lo.</p>
     <div id="social-buttons">

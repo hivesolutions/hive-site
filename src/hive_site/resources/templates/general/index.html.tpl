@@ -5,7 +5,7 @@
     <h1>DEMAND SOMETHING DIFFERENT</h1>
     <h4>Unique software solutions for your business</h4>
     <p>Hive Solutions is a <b>new generation consultancy</b>: we keep things simple, eliminating unnecessary overhead to get straight to the point.</p>
-    <p>We <b>listen</b>, we <b>think</b>, we <b>make</b> and we <b>deliver</b>. To learn more about our consulting philosophy click <a href="consulting"><b>here</b></a>.</p>
+    <p>We focus on building beautiful <a href="saas"><b>Web</b></a> and <a href="mobile"><b>Mobile</b></a> applications. To learn more about our consulting services, click <a href="consulting">here</a>.</p>
     <p>Have a problem? Need help finding or implementing a solution? Have an idea but your organization lacks the resources?<br />
     <a href="contact"><b>Talk to us</b></a>, we will help.</p>
     <div id="social-buttons">

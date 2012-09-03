@@ -217,6 +217,26 @@
                 <div class="portfolio-separator"></div>
             </div>
         </div>
+        <div class="set" data-structure="true" data-sequence="true">
+            <div class="thumbnail" data-structure="true">resources/screenshots_work/marcaki/marcaki-thumbnail.png</div>
+            <div class="screenshots" data-structure="true" data-sequence="true">resources/screenshots_work/marcaki/marcaki_1.png</div>
+            <div class="screenshots" data-structure="true" data-sequence="true">resources/screenshots_work/marcaki/marcaki_2.png</div>
+            <div class="screenshots" data-structure="true" data-sequence="true">resources/screenshots_work/marcaki/marcaki_3.png</div>
+            <div class="screenshots" data-structure="true" data-sequence="true">resources/screenshots_work/marcaki/marcaki_4.png</div>
+            <div class="contents" data-structure="true">
+                <div class="portfolio-header">
+                    <h3 class="portfolio-title">Marcaki</h3>
+                    <h4 class="portfolio-sub-title">Sports Booking System @ 2012</h4>
+                    <p class="portfolio-status yellow">Complete</p>
+                </div>
+                <p class="portfolio-description">
+                    We were approached by a group of promoters interested in developing a scheduling service for sports venues. The service allows potential renters to find and book a venue for practicing amateur sports.<br />
+                    The user front-office provides intuitive search functionality and allows the user to quickly find venues for a specific sport, in the specific location, and for the specified timeslot it is looking for.<br />
+                    The venue back-office allows sports center managers to have a booking calendar solution, to manage the resource occupation.<br />
+                </p>
+                <div class="portfolio-separator"></div>
+            </div>
+        </div>
     </div>
     <div id="portfolio-slider"></div>
     <div id="portfolio-slider-contents"></div>
