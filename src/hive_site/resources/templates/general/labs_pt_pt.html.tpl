@@ -223,11 +223,13 @@
                 <div class="portfolio-header">
                     <h3 class="portfolio-title">Marcaki</h3>
                     <h4 class="portfolio-sub-title">Serviço de Marcação de Recintos Desportivos @ 2012</h4>
-                    <p class="portfolio-status yellow">Completo</p>
+                    <p class="portfolio-status green">Completo</p>
                 </div>
                 <p class="portfolio-description">
                     Fomos abordados por um grupo de promotores interessados em desenvolver um serviço de marcação de recintos desportivos. O serviço permite a desportistas amadores encontrar e alugar um recinto para um conjunto de modalidades.<br />
+                    <br/>
                     O front-office para utilizadores inclui funcionalidade de pequisa intuitiva e permite ao utilizador encontrar o recinto para a modalidade específica, numa localização específica e para uma determinado período de tempo.<br />
+                    <br/>
                     O back-office do recinto permite aos gestores de pavilhões e equipamentos desportivos disporem de uma solução de gestão de reservas online, e assim otimizar alocação dos seus recursos.<br />
                 </p>
                 <div class="portfolio-separator"></div>

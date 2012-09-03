@@ -17,7 +17,7 @@
     </p>
     <p>
         Take a look at some of the shots or go to FrontdoorHQ.com where he'll hapilly provide you with a free 30-day trial, so you can see for yourself how Frontdoor can help you.
-    </p>    
+    </p>
     <a id="screenshots-button">Check some screens</a>
     <div class="topic-area">
         <div class="topic">

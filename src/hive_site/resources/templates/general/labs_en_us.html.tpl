@@ -226,11 +226,13 @@
                 <div class="portfolio-header">
                     <h3 class="portfolio-title">Marcaki</h3>
                     <h4 class="portfolio-sub-title">Sports Booking System @ 2012</h4>
-                    <p class="portfolio-status yellow">Complete</p>
+                    <p class="portfolio-status green">Complete</p>
                 </div>
                 <p class="portfolio-description">
                     We were approached by a group of promoters interested in developing a scheduling service for sports venues. The service allows potential renters to find and book a venue for practicing amateur sports.<br />
+                    <br/>
                     The user front-office provides intuitive search functionality and allows the user to quickly find venues for a specific sport, in the specific location, and for the specified timeslot it is looking for.<br />
+                    <br/>
                     The venue back-office allows sports center managers to have a booking calendar solution, to manage the resource occupation.<br />
                 </p>
                 <div class="portfolio-separator"></div>
