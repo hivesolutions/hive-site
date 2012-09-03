@@ -7,16 +7,16 @@
         <a href="https://www.frontdoorhq.com/">Frontdoor</a> is Hive Solution's flagship product: a beautiful POS-as-a-Service for retail shops.
     </p>
     <p>
-        Designed for simplicity and ease-of-use, Frontdoor combines the user experience of a great web product with functionality you'd only expect in big business IT.
+        Designed for <b>simplicity and ease-of-use</b>, Frontdoor combines the user experience of a great web product with functionality you'd only expect in big business IT.
     </p>
     <p>
-        Frontdoor looks fun, but it's certainly not a toy: it comes jam-packed with high-end retail functionality: from sophisticated inventory management to business analytics.
+        Frontdoor looks fun, but it's certainly not a toy: it comes jam-packed with <b>high-end retail functionality</b>: from sophisticated inventory management to business analytics.
     </p>
     <p>
-        And being delivered as a service means everytime you log-in, wherever you log-in from, you always get the latest, greatest version.
+        And being delivered as a service means everytime you log-in, wherever you log-in from, you <b>always get the latest, greatest version</b>.
     </p>
     <p>
-        Take a look at some of the shots or go to FrontdoorHQ.com where he'll hapilly provide you with a free 30-day trial, so you can see for yourself how Frontdoor can help you.
+        Take a look at some of the shots or go to <a href="http://frontdoorhq.com">FrontdoorHQ.com</a>, where we'll gladly provide you with a free 30-day trial, so you can see for yourself how Frontdoor can help you.
     </p>
     <a id="screenshots-button">Check some screens</a>
     <div class="topic-area">

@@ -4,19 +4,19 @@
     </div>
     <h1>PRODUTOS</h1>
     <p>
-        <a href="https://www.frontdoorhq.com/">Frontdoor</a> é o produto de referência da Hive Solutions: um atraente POS online para lojas de retalho.
+        <a href="https://www.frontdoorhq.com/">Frontdoor</a> é o produto de referência da Hive Solutions: um <b>atraente POS online para lojas de retalho</b>.
     </p>
     <p>
-        Frontdoor tem um aspecto apelativo, mas não se trata de um brinquedo: vem carregado de funcionalidade topo de gama: desde gestão avançada de inventário até ferramentas de análise e reporting.
+        Desenhado a pensar na <b>simplicidade e usabilidade</b>, o Frontdoor combina a experiência de utilização de um grande produto web com funcionalidade que apenas seria de esperar em software para grandes organizações.
     </p>
     <p>
-        Desenhado a pensar na simplicidade e usabilidade, o Frontdoor combina a experiência de utilização de um grande produto web com funcionalidade que apenas seria de esperar em software para grandes organizações.
+        Frontdoor tem um aspecto apelativo, mas não se trata de um brinquedo: vem carregado de <b>funcionalidade topo de gama</b>: desde gestão avançada de inventário até ferramentas de análise e reporting.
     </p>
     <p>
-        O facto de ser distribuido como serviço significa que cada vez que inicia sessão no sistema, onde quer que seja, terá sempre a versão mais recente e completa.
+        O facto de ser distribuido como serviço significa que cada vez que inicia sessão no sistema, onde quer que seja, terá <b>sempre a versão mais recente e completa</b>.
     </p>
     <p>
-        Veja algumas imagens ou visite <a href="https://www.frontdoorhq.com/">FrontdoorHQ.com</a> onde oferecemos uma demonstração de 30 dias, onde poderá experimentar por si como o Frontdoor o pode ajudar.
+        Veja algumas imagens ou visite <a href="http://frontdoorhq.com/">FrontdoorHQ.com</a> onde oferecemos uma demonstração de 30 dias, onde poderá experimentar por si como o Frontdoor o pode ajudar.
     </p>
     <a id="screenshots-button">Veja algumas imagens</a>
     <div class="topic-area">
