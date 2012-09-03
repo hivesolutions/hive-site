@@ -218,7 +218,6 @@
             <div class="screenshots" data-structure="true" data-sequence="true">resources/screenshots_work/marcaki/marcaki_1.png</div>
             <div class="screenshots" data-structure="true" data-sequence="true">resources/screenshots_work/marcaki/marcaki_2.png</div>
             <div class="screenshots" data-structure="true" data-sequence="true">resources/screenshots_work/marcaki/marcaki_3.png</div>
-            <div class="screenshots" data-structure="true" data-sequence="true">resources/screenshots_work/marcaki/marcaki_4.png</div>
             <div class="contents" data-structure="true">
                 <div class="portfolio-header">
                     <h3 class="portfolio-title">Marcaki</h3>
