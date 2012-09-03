@@ -16,7 +16,7 @@
         And being delivered as a service means everytime you log-in, wherever you log-in from, you <b>always get the latest, greatest version</b>.
     </p>
     <p>
-        Take a look at some of the shots or go to <a href="http://frontdoorhq.com">FrontdoorHQ.com</a>, where we'll gladly provide you with a free 30-day trial, so you can see for yourself how Frontdoor can help you.
+        Take a look at some of the shots or go to <a href="http://frontdoorhq.com"><b>frontdoorhq.com</b></a>, where we'll gladly provide you with a free 30-day trial, so you can see for yourself how Frontdoor can help you.
     </p>
     <a id="screenshots-button">Check some screens</a>
     <div class="topic-area">

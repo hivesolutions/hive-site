@@ -16,7 +16,7 @@
         O facto de ser distribuido como serviço significa que cada vez que inicia sessão no sistema, onde quer que seja, terá <b>sempre a versão mais recente e completa</b>.
     </p>
     <p>
-        Veja algumas imagens ou visite <a href="http://frontdoorhq.com/">FrontdoorHQ.com</a> onde oferecemos uma demonstração de 30 dias, onde poderá experimentar por si como o Frontdoor o pode ajudar.
+        Veja algumas imagens ou visite <a href="http://frontdoorhq.com/"><b>frontdoorhq.com</b></a> onde oferecemos uma demonstração de 30 dias, onde poderá experimentar por si como o Frontdoor o pode ajudar.
     </p>
     <a id="screenshots-button">Veja algumas imagens</a>
     <div class="topic-area">
