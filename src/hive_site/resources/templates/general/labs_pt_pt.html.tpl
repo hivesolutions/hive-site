@@ -171,20 +171,20 @@
             </div>
         </div>
         <div class="set" data-structure="true" data-sequence="true">
-            <div class="thumbnail" data-structure="true">resources/screenshots_work/media_dashboard/media_dashboard-thumbnail.png</div>
-            <div class="screenshots" data-structure="true" data-sequence="true">resources/screenshots_work/media_dashboard/media_dashboard_1.png</div>
-            <div class="screenshots" data-structure="true" data-sequence="true">resources/screenshots_work/media_dashboard/media_dashboard_2.png</div>
-            <div class="screenshots" data-structure="true" data-sequence="true">resources/screenshots_work/media_dashboard/media_dashboard_3.png</div>
+            <div class="thumbnail" data-structure="true">resources/screenshots_work/medium/medium-thumbnail.png</div>
+            <div class="screenshots" data-structure="true" data-sequence="true">resources/screenshots_work/medium/medium_1.png</div>
+            <div class="screenshots" data-structure="true" data-sequence="true">resources/screenshots_work/medium/medium_2.png</div>
+            <div class="screenshots" data-structure="true" data-sequence="true">resources/screenshots_work/medium/medium_3.png</div>
             <div class="contents" data-structure="true">
                 <div class="portfolio-header">
-                    <h3 class="portfolio-title">Hive Media Dashboard</h3>
+                    <h3 class="portfolio-title">Hive Medium</h3>
                     <h4 class="portfolio-sub-title">Dashboard Interactiva @ 2010</h4>
                     <p class="portfolio-status green">Completo</p>
                 </div>
                 <p class="portfolio-description">
-                    A Media Dashboard foi a solução que encontrámos para <b>manter toda a gente informada</b> no nosso ambiente de trabalho.<br/>
+                    A Medium foi a solução que encontrámos para <b>manter toda a gente informada</b> no nosso ambiente de trabalho.<br/>
                     <br/>
-                    A Media Dashboard é uma aplicação Colony que integra com o nosso sistema de automação de builds e <b>reporta novos commits, problemas com a build, bugs</b> ou pode exibir mensagens de alerta e vídeos.<br/>
+                    A Medium é uma aplicação Colony que integra com o nosso sistema de automação de builds e <b>reporta novos commits, problemas com a build, bugs</b> ou pode exibir mensagens de alerta e vídeos.<br/>
                     <br/>
                     Foi construída usando HTML5, CSS3 e especialmente JavaScript. Utilizamos algumas funcionalidades de HTML5 extensivamente tal como <b>reprodução de media</b> para exibir vídeos e reproduzir sons de alerta. Utilizamos <b>Canvas 2D</b> e os nossos <b>plugins jQuery de desenho</b> para exibir gráficos. Até montámos um LCD de 42" na sede da Hive, para funcionar como o nosso centro de operações.
                 </p>

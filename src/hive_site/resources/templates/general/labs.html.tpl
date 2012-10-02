@@ -170,20 +170,20 @@
             </div>
         </div>
         <div class="set" data-structure="true" data-sequence="true">
-            <div class="thumbnail" data-structure="true">resources/screenshots_work/media_dashboard/media_dashboard-thumbnail.png</div>
-            <div class="screenshots" data-structure="true" data-sequence="true">resources/screenshots_work/media_dashboard/media_dashboard_1.png</div>
-            <div class="screenshots" data-structure="true" data-sequence="true">resources/screenshots_work/media_dashboard/media_dashboard_2.png</div>
-            <div class="screenshots" data-structure="true" data-sequence="true">resources/screenshots_work/media_dashboard/media_dashboard_3.png</div>
+            <div class="thumbnail" data-structure="true">resources/screenshots_work/medium/medium-thumbnail.png</div>
+            <div class="screenshots" data-structure="true" data-sequence="true">resources/screenshots_work/medium/medium_1.png</div>
+            <div class="screenshots" data-structure="true" data-sequence="true">resources/screenshots_work/medium/medium_2.png</div>
+            <div class="screenshots" data-structure="true" data-sequence="true">resources/screenshots_work/medium/medium_3.png</div>
             <div class="contents" data-structure="true">
                 <div class="portfolio-header">
-                    <h3 class="portfolio-title">Hive Media Dashboard</h3>
-                    <h4 class="portfolio-sub-title">Interactive Media Dashboard @ 2010</h4>
+                    <h3 class="portfolio-title">Hive Medium</h3>
+                    <h4 class="portfolio-sub-title">Interactive Medium @ 2010</h4>
                     <p class="portfolio-status green">Complete</p>
                 </div>
                 <p class="portfolio-description">
-                    The Media Dashboard was the solution we found for <b>keeping everyone up-to-date</b> in our working environment.<br/>
+                    The Medium was the solution we found for <b>keeping everyone up-to-date</b> in our working environment.<br/>
                     <br/>
-                    The Media Dashboard is a Colony application which integrates with our build automation system and <b>reports new commits, build failures, bugs</b> or can display warning messages and videos.<br/>
+                    The Medium is a Colony application which integrates with our build automation system and <b>reports new commits, build failures, bugs</b> or can display warning messages and videos.<br/>
                     <br/>
                     It's build using HTML5, CSS3 and mostly JavaScript.
                     We used some HTML5 features extensively such as the <b>media playback</b> support for video and playing warning sounds.

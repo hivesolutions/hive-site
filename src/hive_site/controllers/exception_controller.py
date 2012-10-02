@@ -34,6 +34,8 @@ __copyright__ = "Copyright (c) 2010-2012 Hive Solutions Lda."
 __license__ = "Hive Solutions Confidential Usage License (HSCUL)"
 """ The license for the module """
 
+import colony.libs.import_util
+
 EXCEPTION_VALUE = "exception"
 """ The exception value """
 
@@ -46,29 +48,12 @@ AVAILABLE_LOCALES = (
 )
 """ The available locales """
 
-class ExceptionController:
+controllers = colony.libs.import_util.__import__("controllers")
+
+class ExceptionController(controllers.Controller):
     """
     The hive site exception controller
     """
-
-    hive_site_plugin = None
-    """ The hive site plugin """
-
-    hive_site = None
-    """ The hive site """
-
-    def __init__(self, hive_site_plugin, hive_site):
-        """
-        Constructor of the class.
-
-        @type hive_site_plugin: HiveSitePlugin
-        @param hive_site_plugin: The hive site plugin.
-        @type hive_site: HiveSite
-        @param hive_site: The hive site.
-        """
-
-        self.hive_site_plugin = hive_site_plugin
-        self.hive_site = hive_site
 
     def handle_exception(self, rest_request, parameters = {}):
         """

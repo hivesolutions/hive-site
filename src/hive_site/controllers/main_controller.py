@@ -97,30 +97,12 @@ AVAILABLE_LOCALES = (
 
 models = colony.libs.import_util.__import__("models")
 mvc_utils = colony.libs.import_util.__import__("mvc_utils")
+controllers = colony.libs.import_util.__import__("controllers")
 
-class MainController:
+class MainController(controllers.Controller):
     """
     The hive site controller.
     """
-
-    hive_site_plugin = None
-    """ The hive site plugin """
-
-    hive_site = None
-    """ The hive site """
-
-    def __init__(self, hive_site_plugin, hive_site):
-        """
-        Constructor of the class.
-
-        @type hive_site_plugin: HiveSitePlugin
-        @param hive_site_plugin: The hive site plugin.
-        @type hive_site: HiveSite
-        @param hive_site: The hive site.
-        """
-
-        self.hive_site_plugin = hive_site_plugin
-        self.hive_site = hive_site
 
     @mvc_utils.serialize_exceptions("all")
     def handle_hive_index(self, rest_request, parameters = {}):
@@ -461,10 +443,10 @@ class MainController:
 
     def _send_contact_form_email(self, rest_request, contact_form_model):
         # retrieves the client_smtp plugin
-        client_smtp_plugin = self.hive_site_plugin.client_smtp_plugin
+        client_smtp_plugin = self.plugin.client_smtp_plugin
 
         # retrieves the format mime plugin
-        format_mime_plugin = self.hive_site_plugin.format_mime_plugin
+        format_mime_plugin = self.plugin.format_mime_plugin
 
         # retrieves the contact form attributes
         name = contact_form_model.name
@@ -534,7 +516,7 @@ class MainController:
 
     def _get_email_attributes(self):
         # retrieves the resources manager plugin
-        resources_manager_plugin = self.hive_site_plugin.resources_manager_plugin
+        resources_manager_plugin = self.plugin.resources_manager_plugin
 
         # retrieves the smtp resources
         smtp_server = resources_manager_plugin.get_resource("system.mail.smtp_server")
