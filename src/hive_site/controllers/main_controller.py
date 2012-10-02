@@ -118,8 +118,13 @@ class MainController(controllers.Controller):
         # retrieves the current locale
         locale = self.get_locale(rest_request, AVAILABLE_LOCALES)
 
-        # processes the contents of the template file assigning the appropriate values to it
-        template_file = self.retrieve_template_file("general.html.tpl", partial_page = "general/index.html.tpl", locale = locale)
+        # processes the contents of the template file assigning the
+        # appropriate values to it
+        template_file = self.retrieve_template_file(
+            "general.html.tpl",
+            partial_page = "general/index.html.tpl",
+            locale = locale
+        )
         template_file.assign("area", "home")
         template_file.assign("title", "Hive Solutions")
         self.process_set_contents(rest_request, template_file)
@@ -138,8 +143,13 @@ class MainController(controllers.Controller):
         # retrieves the current locale
         locale = self.get_locale(rest_request, AVAILABLE_LOCALES)
 
-        # processes the contents of the template file assigning the appropriate values to it
-        template_file = self.retrieve_template_file("general.html.tpl", partial_page = "general/contact.html.tpl", locale = locale)
+        # processes the contents of the template file assigning the
+        # appropriate values to it
+        template_file = self.retrieve_template_file(
+            "general.html.tpl",
+            partial_page = "general/contact.html.tpl",
+            locale = locale
+        )
         template_file.assign("area", "about")
         template_file.assign("title", "Hive Solutions - Contact")
         self.process_set_contents(rest_request, template_file)
@@ -166,8 +176,13 @@ class MainController(controllers.Controller):
             # retrieves the current locale
             locale = self.get_locale(rest_request, AVAILABLE_LOCALES)
 
-            # processes the contents of the template file assigning the appropriate values to it
-            template_file = self.retrieve_template_file("general.html.tpl", partial_page = "general/contact.html.tpl", locale = locale)
+            # processes the contents of the template file assigning the
+            # appropriate values to it
+            template_file = self.retrieve_template_file(
+                "general.html.tpl",
+                partial_page = "general/contact.html.tpl",
+                locale = locale
+            )
             template_file.assign("area", "about")
             template_file.assign("contact_form_model", contact_form_model)
             template_file.assign("contact_form_error", REQUIRED_FIELDS_MISSING_ERROR_TEXT)
@@ -190,8 +205,13 @@ class MainController(controllers.Controller):
             # retrieves the current locale
             locale = self.get_locale(rest_request, AVAILABLE_LOCALES)
 
-            # processes the contents of the template file assigning the appropriate values to it
-            template_file = self.retrieve_template_file("general.html.tpl", partial_page = "general/contact.html.tpl", locale = locale)
+            # processes the contents of the template file assigning the
+            # appropriate values to it
+            template_file = self.retrieve_template_file(
+                "general.html.tpl",
+                partial_page = "general/contact.html.tpl",
+                locale = locale
+            )
             template_file.assign("area", "about")
             template_file.assign("title", "Hive Solutions - Contact")
             template_file.assign("contact_form_model", contact_form_model)
@@ -224,8 +244,13 @@ class MainController(controllers.Controller):
         # retrieves the name from the parameters
         name = self.get_session_attribute(rest_request, "name")
 
-        # processes the contents of the template file assigning the appropriate values to it
-        template_file = self.retrieve_template_file("general.html.tpl", partial_page = "general/thankyou.html.tpl", locale = locale)
+        # processes the contents of the template file assigning the
+        # appropriate values to it
+        template_file = self.retrieve_template_file(
+            "general.html.tpl",
+            partial_page = "general/thankyou.html.tpl",
+            locale = locale
+        )
         template_file.assign("area", "about")
         template_file.assign("title", "Hive Solutions - Thank You")
         template_file.assign("name", name)
@@ -245,8 +270,13 @@ class MainController(controllers.Controller):
         # retrieves the current locale
         locale = self.get_locale(rest_request, AVAILABLE_LOCALES)
 
-        # processes the contents of the template file assigning the appropriate values to it
-        template_file = self.retrieve_template_file("general.html.tpl", partial_page = "general/products.html.tpl", locale = locale)
+        # processes the contents of the template file assigning the
+        # appropriate values to it
+        template_file = self.retrieve_template_file(
+            "general.html.tpl",
+            partial_page = "general/products.html.tpl",
+            locale = locale
+        )
         template_file.assign("area", "products")
         template_file.assign("title", "Hive Solutions - Products")
         self.process_set_contents(rest_request, template_file)
@@ -265,8 +295,13 @@ class MainController(controllers.Controller):
         # retrieves the current locale
         locale = self.get_locale(rest_request, AVAILABLE_LOCALES)
 
-        # processes the contents of the template file assigning the appropriate values to it
-        template_file = self.retrieve_template_file("general.html.tpl", partial_page = "general/consulting.html.tpl", locale = locale)
+        # processes the contents of the template file assigning the
+        # appropriate values to it
+        template_file = self.retrieve_template_file(
+            "general.html.tpl",
+            partial_page = "general/consulting.html.tpl",
+            locale = locale
+        )
         template_file.assign("area", "consulting")
         template_file.assign("title", "Hive Solutions - Consulting")
         self.process_set_contents(rest_request, template_file)
@@ -285,8 +320,13 @@ class MainController(controllers.Controller):
         # retrieves the current locale
         locale = self.get_locale(rest_request, AVAILABLE_LOCALES)
 
-        # processes the contents of the template file assigning the appropriate values to it
-        template_file = self.retrieve_template_file("general.html.tpl", partial_page = "general/saas.html.tpl", locale = locale)
+        # processes the contents of the template file assigning the
+        # appropriate values to it
+        template_file = self.retrieve_template_file(
+            "general.html.tpl",
+            partial_page = "general/saas.html.tpl",
+            locale = locale
+        )
         template_file.assign("area", "consulting")
         template_file.assign("title", "Hive Solutions - SaaS")
         self.process_set_contents(rest_request, template_file)
@@ -305,8 +345,13 @@ class MainController(controllers.Controller):
         # retrieves the current locale
         locale = self.get_locale(rest_request, AVAILABLE_LOCALES)
 
-        # processes the contents of the template file assigning the appropriate values to it
-        template_file = self.retrieve_template_file("general.html.tpl", partial_page = "general/cloud.html.tpl", locale = locale)
+        # processes the contents of the template file assigning the
+        # appropriate values to it
+        template_file = self.retrieve_template_file(
+            "general.html.tpl",
+            partial_page = "general/cloud.html.tpl",
+            locale = locale
+        )
         template_file.assign("area", "consulting")
         template_file.assign("title", "Hive Solutions - Cloud")
         self.process_set_contents(rest_request, template_file)
@@ -325,8 +370,13 @@ class MainController(controllers.Controller):
         # retrieves the current locale
         locale = self.get_locale(rest_request, AVAILABLE_LOCALES)
 
-        # processes the contents of the template file assigning the appropriate values to it
-        template_file = self.retrieve_template_file("general.html.tpl", partial_page = "general/social.html.tpl", locale = locale)
+        # processes the contents of the template file assigning the
+        # appropriate values to it
+        template_file = self.retrieve_template_file(
+            "general.html.tpl",
+            partial_page = "general/social.html.tpl",
+            locale = locale
+        )
         template_file.assign("area", "consulting")
         template_file.assign("title", "Hive Solutions - Social")
         self.process_set_contents(rest_request, template_file)
@@ -345,8 +395,13 @@ class MainController(controllers.Controller):
         # retrieves the current locale
         locale = self.get_locale(rest_request, AVAILABLE_LOCALES)
 
-        # processes the contents of the template file assigning the appropriate values to it
-        template_file = self.retrieve_template_file("general.html.tpl", partial_page = "general/mobile.html.tpl", locale = locale)
+        # processes the contents of the template file assigning the
+        # appropriate values to it
+        template_file = self.retrieve_template_file(
+            "general.html.tpl",
+            partial_page = "general/mobile.html.tpl",
+            locale = locale
+        )
         template_file.assign("area", "consulting")
         template_file.assign("title", "Hive Solutions - Mobile")
         self.process_set_contents(rest_request, template_file)
@@ -365,8 +420,13 @@ class MainController(controllers.Controller):
         # retrieves the current locale
         locale = self.get_locale(rest_request, AVAILABLE_LOCALES)
 
-        # processes the contents of the template file assigning the appropriate values to it
-        template_file = self.retrieve_template_file("general.html.tpl", partial_page = "general/labs.html.tpl", locale = locale)
+        # processes the contents of the template file assigning the
+        # appropriate values to it
+        template_file = self.retrieve_template_file(
+            "general.html.tpl",
+            partial_page = "general/labs.html.tpl",
+            locale = locale
+        )
         template_file.assign("area", "labs")
         template_file.assign("title", "Hive Solutions - Labs")
         self.process_set_contents(rest_request, template_file)
@@ -385,8 +445,13 @@ class MainController(controllers.Controller):
         # retrieves the current locale
         locale = self.get_locale(rest_request, AVAILABLE_LOCALES)
 
-        # processes the contents of the template file assigning the appropriate values to it
-        template_file = self.retrieve_template_file("general.html.tpl", partial_page = "general/people.html.tpl", locale = locale)
+        # processes the contents of the template file assigning the
+        # appropriate values to it
+        template_file = self.retrieve_template_file(
+            "general.html.tpl",
+            partial_page = "general/people.html.tpl",
+            locale = locale
+        )
         template_file.assign("area", "people")
         template_file.assign("title", "Hive Solutions - People")
         self.process_set_contents(rest_request, template_file)
@@ -405,8 +470,13 @@ class MainController(controllers.Controller):
         # retrieves the current locale
         locale = self.get_locale(rest_request, AVAILABLE_LOCALES)
 
-        # processes the contents of the template file assigning the appropriate values to it
-        template_file = self.retrieve_template_file("general.html.tpl", partial_page = "general/about.html.tpl", locale = locale)
+        # processes the contents of the template file assigning the
+        # appropriate values to it
+        template_file = self.retrieve_template_file(
+            "general.html.tpl",
+            partial_page = "general/about.html.tpl",
+            locale = locale
+        )
         template_file.assign("area", "about")
         template_file.assign("title", "Hive Solutions - About")
         self.process_set_contents(rest_request, template_file)
