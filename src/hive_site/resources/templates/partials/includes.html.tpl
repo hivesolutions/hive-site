@@ -13,6 +13,6 @@
 <script type="text/javascript" src="${out_none value=base_path /}resources/libs/jquery_util_ui/effects/js/effects.js"></script>
 <script type="text/javascript" src="${out_none value=base_path /}resources/libs/jquery_util_ui/slider/js/slider.js"></script>
 <script type="text/javascript" src="${out_none value=base_path /}resources/libs/jquery_util_ui/slideshow/js/slideshow.js"></script>
-<script type="text/javascript" src="${out_none value=base_path /}resources/libs/util/browser.js"></script>
+<script type="text/javascript" src="${out_none value=base_path /}resources/libs/util/general/browser.js"></script>
 <script type="text/javascript" src="${out_none value=base_path /}resources/js/plugins.js"></script>
 <script type="text/javascript" src="${out_none value=base_path /}resources/js/main.js"></script>
