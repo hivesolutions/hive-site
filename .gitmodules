@@ -1,0 +1,12 @@
+[submodule "src/hive_site/resources/extras/libs/jquery"]
+	path = src/hive_site/resources/extras/libs/jquery
+	url = git@github.com:hivesolutions/jquery.git
+[submodule "src/hive_site/resources/extras/libs/jquery_util"]
+	path = src/hive_site/resources/extras/libs/jquery_util
+	url = git@github.com:hivesolutions/jquery_util.git
+[submodule "src/hive_site/resources/extras/libs/jquery_util_ui"]
+	path = src/hive_site/resources/extras/libs/jquery_util_ui
+	url = git@github.com:hivesolutions/jquery_util_ui.git
+[submodule "src/hive_site/resources/extras/libs/util"]
+	path = src/hive_site/resources/extras/libs/util
+	url = git@github.com:hivesolutions/js_util.git
