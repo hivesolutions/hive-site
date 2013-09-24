@@ -38,6 +38,8 @@ import datetime
 
 import colony.libs.import_util
 
+import hive_site.exceptions
+
 DEFAULT_ENCODING = "utf-8"
 """ The default encoding value """
 
@@ -571,15 +573,22 @@ class MainController(controllers.Controller):
         mime_message.set_header(SUBJECT_VALUE, subject)
         mime_message.set_header(DATE_VALUE, current_date_time_formated)
 
-        # writes the contents to the mime message
+        # writes the contents to the mime message and then retrieves
+        # the complete mime message value to be used as the payload
         mime_message.write(problem_encoded)
-
-        # retrieves the mime message value
         mime_message_value = mime_message.get_value()
 
         try:
-            # send the email using the defined values
-            smtp_client.send_mail(smtp_server, smtp_port, from_line, [to_line], mime_message_value, parameters)
+            # send the email using the defined values, including the
+            # constructed mime message contents
+            smtp_client.send_mail(
+                smtp_server,
+                smtp_port,
+                from_line,
+                [to_line],
+                mime_message_value,
+                parameters
+            )
         finally:
             # closes the smtp client
             smtp_client.close({})
@@ -588,21 +597,28 @@ class MainController(controllers.Controller):
         # retrieves the resources manager plugin
         resources_manager_plugin = self.plugin.resources_manager_plugin
 
-        # retrieves the smtp resources
+        # retrieves the various smtp resource values that should
+        # have been set in the current configuration
         smtp_server = resources_manager_plugin.get_resource("system.mail.smtp_server")
         smtp_port = resources_manager_plugin.get_resource("system.mail.smtp_port")
         smtp_use_tls = resources_manager_plugin.get_resource("system.mail.smtp_use_tls")
         smtp_user = resources_manager_plugin.get_resource("system.mail.smtp_user")
         smtp_password = resources_manager_plugin.get_resource("system.mail.smtp_password")
 
-        # retrieves the data from the smtp resources
-        smtp_server_data = smtp_server.data
-        smtp_port_data = smtp_port.data
-        smtp_use_tls_data = smtp_use_tls.data
-        smtp_user_data = smtp_user.data
-        smtp_password_data = smtp_password.data
+        # verifies that the smtp server configuration is correctly defined
+        # otherwise raises an exception indicating the problem
+        if not smtp_server: raise hive_site.exceptions.MissingConfiguration("smtp server configuration")
 
-        # returns the smtp attributes
+        # retrieves the data from the smtp resources, defaulting
+        # to the unset value in case the server is not valid
+        smtp_server_data = smtp_server.data
+        smtp_port_data = smtp_port and smtp_port.data or 25
+        smtp_use_tls_data = smtp_use_tls and smtp_use_tls.data or False
+        smtp_user_data = smtp_user and smtp_user.data or None
+        smtp_password_data = smtp_password and smtp_password.data or None
+
+        # returns the smtp attributes as a set of tuple values to
+        # be unpacked in the calling method
         return (
             smtp_server_data,
             smtp_port_data,

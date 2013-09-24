@@ -43,3 +43,30 @@ class HiveSiteException(colony.base.exceptions.ColonyException):
 
     message = None
     """ The exception's message """
+
+class MissingConfiguration(HiveSiteException):
+    """
+    The missing configuration class, used for the notification
+    on the missing of a configuration value.
+    """
+
+    def __init__(self, message):
+        """
+        Constructor of the class.
+
+        @type message: String
+        @param message: The message to be printed.
+        """
+
+        HiveSiteException.__init__(self)
+        self.message = message
+
+    def __str__(self):
+        """
+        Returns the string representation of the class.
+
+        @rtype: String
+        @return: The string representation of the class.
+        """
+
+        return "Missing configuration - %s" % self.message
