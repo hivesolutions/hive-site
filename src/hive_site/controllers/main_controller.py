@@ -106,7 +106,7 @@ class MainController(controllers.Controller):
     The hive site controller.
     """
 
-    @mvc_utils.serialize("all")
+    @mvc_utils.serialize
     def handle_hive_index(self, rest_request, parameters = {}):
         """
         Handles the given hive index rest request.
@@ -131,7 +131,7 @@ class MainController(controllers.Controller):
         template_file.assign("title", "Hive Solutions")
         self.process_set_contents(rest_request, template_file)
 
-    @mvc_utils.serialize("all")
+    @mvc_utils.serialize
     def handle_hive_contact(self, rest_request, parameters = {}):
         """
         Handles the given hive contact rest request.
@@ -156,7 +156,7 @@ class MainController(controllers.Controller):
         template_file.assign("title", "Hive Solutions - Contact")
         self.process_set_contents(rest_request, template_file)
 
-    @mvc_utils.serialize("all")
+    @mvc_utils.serialize
     def handle_hive_contact_process(self, rest_request, parameters = {}):
         """
         Handles the given hive contact process rest request.
@@ -229,7 +229,7 @@ class MainController(controllers.Controller):
         # redirects to the thank you page
         self.redirect_base_path(rest_request, "thankyou#thank-you-wrapper", quote = False)
 
-    @mvc_utils.serialize("all")
+    @mvc_utils.serialize
     def handle_hive_thankyou(self, rest_request, parameters = {}):
         """
         Handles the given hive thankyou rest request.
@@ -258,7 +258,7 @@ class MainController(controllers.Controller):
         template_file.assign("name", name)
         self.process_set_contents(rest_request, template_file)
 
-    @mvc_utils.serialize("all")
+    @mvc_utils.serialize
     def handle_hive_products(self, rest_request, parameters = {}):
         """
         Handles the given hive products rest request.
@@ -283,7 +283,7 @@ class MainController(controllers.Controller):
         template_file.assign("title", "Hive Solutions - Products")
         self.process_set_contents(rest_request, template_file)
 
-    @mvc_utils.serialize("all")
+    @mvc_utils.serialize
     def handle_hive_consulting(self, rest_request, parameters = {}):
         """
         Handles the given hive consulting rest request.
@@ -308,7 +308,7 @@ class MainController(controllers.Controller):
         template_file.assign("title", "Hive Solutions - Consulting")
         self.process_set_contents(rest_request, template_file)
 
-    @mvc_utils.serialize("all")
+    @mvc_utils.serialize
     def handle_hive_saas(self, rest_request, parameters = {}):
         """
         Handles the given hive saas rest request.
@@ -333,7 +333,7 @@ class MainController(controllers.Controller):
         template_file.assign("title", "Hive Solutions - SaaS")
         self.process_set_contents(rest_request, template_file)
 
-    @mvc_utils.serialize("all")
+    @mvc_utils.serialize
     def handle_hive_cloud(self, rest_request, parameters = {}):
         """
         Handles the given hive cloud rest request.
@@ -358,7 +358,7 @@ class MainController(controllers.Controller):
         template_file.assign("title", "Hive Solutions - Cloud")
         self.process_set_contents(rest_request, template_file)
 
-    @mvc_utils.serialize("all")
+    @mvc_utils.serialize
     def handle_hive_social(self, rest_request, parameters = {}):
         """
         Handles the given hive social rest request.
@@ -383,7 +383,7 @@ class MainController(controllers.Controller):
         template_file.assign("title", "Hive Solutions - Social")
         self.process_set_contents(rest_request, template_file)
 
-    @mvc_utils.serialize("all")
+    @mvc_utils.serialize
     def handle_hive_mobile(self, rest_request, parameters = {}):
         """
         Handles the given hive mobile rest request.
@@ -408,7 +408,7 @@ class MainController(controllers.Controller):
         template_file.assign("title", "Hive Solutions - Mobile")
         self.process_set_contents(rest_request, template_file)
 
-    @mvc_utils.serialize("all")
+    @mvc_utils.serialize
     def handle_hive_labs(self, rest_request, parameters = {}):
         """
         Handles the given hive labs rest request.
@@ -433,7 +433,7 @@ class MainController(controllers.Controller):
         template_file.assign("title", "Hive Solutions - Labs")
         self.process_set_contents(rest_request, template_file)
 
-    @mvc_utils.serialize("all")
+    @mvc_utils.serialize
     def handle_hive_people(self, rest_request, parameters = {}):
         """
         Handles the given hive people rest request.
@@ -458,7 +458,7 @@ class MainController(controllers.Controller):
         template_file.assign("title", "Hive Solutions - People")
         self.process_set_contents(rest_request, template_file)
 
-    @mvc_utils.serialize("all")
+    @mvc_utils.serialize
     def handle_hive_about(self, rest_request, parameters = {}):
         """
         Handles the given hive about rest request.
@@ -483,7 +483,7 @@ class MainController(controllers.Controller):
         template_file.assign("title", "Hive Solutions - About")
         self.process_set_contents(rest_request, template_file)
 
-    @mvc_utils.serialize("all")
+    @mvc_utils.serialize
     def handle_hive_language(self, rest_request, parameters = {}):
         """
         Handles the given hive language rest request.
