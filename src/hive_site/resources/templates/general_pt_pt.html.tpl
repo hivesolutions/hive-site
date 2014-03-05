@@ -1,6 +1,6 @@
 ${include file="partials/doctype.html.tpl" /}
 <head>
-    <title>${out_none value=title xml_escape=True /}</title>
+    <title>${out value=title xml_escape=True /}</title>
     ${include file="partials/content_type.html.tpl" /}
     ${include file="partials/includes.html.tpl" /}
 </head>

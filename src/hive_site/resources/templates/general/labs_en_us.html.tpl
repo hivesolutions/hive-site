@@ -1,6 +1,6 @@
 <div id="content">
     <div id="media">
-        <img src="${out_none value=base_path /}resources/images/illustration-labs.png" height="300" width="900" alt="" />
+        <img src="${out value=base_path /}resources/images/illustration-labs.png" height="300" width="900" alt="" />
     </div>
     <h1>LABS</h1>
     <p>

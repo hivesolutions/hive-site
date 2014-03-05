@@ -1,6 +1,6 @@
 <div id="content">
     <div id="media">
-        <img src="${out_none value=base_path /}resources/images/illustration-social.png" height="300" width="900" alt="" />
+        <img src="${out value=base_path /}resources/images/illustration-social.png" height="300" width="900" alt="" />
     </div>
     <h1>SOCIAL</h1>
     <p>
@@ -17,7 +17,7 @@
     <div class="topic-area">
         <div class="topic">
             <div class="topic-image">
-                <img src="${out_none value=base_path /}resources/images/icon-connected.png" height="64" width="64" alt="" />
+                <img src="${out value=base_path /}resources/images/icon-connected.png" height="64" width="64" alt="" />
             </div>
             <h3>Conectado</h3>
             <div class="topic-text">
@@ -29,7 +29,7 @@
 
         <div class="topic">
             <div class="topic-image">
-                <img src="${out_none value=base_path /}resources/images/icon-knowledge.png" height="64" width="64" alt="" />
+                <img src="${out value=base_path /}resources/images/icon-knowledge.png" height="64" width="64" alt="" />
             </div>
             <h3>Conhecimento</h3>
             <div class="topic-text">
@@ -41,7 +41,7 @@
         <div class="clear"></div>
         <div class="topic">
             <div class="topic-image">
-                <img src="${out_none value=base_path /}resources/images/icon-awareness.png" height="64" width="64" alt="" />
+                <img src="${out value=base_path /}resources/images/icon-awareness.png" height="64" width="64" alt="" />
             </div>
             <h3>Presença</h3>
             <div class="topic-text">
@@ -52,7 +52,7 @@
         </div>
         <div class="topic">
             <div class="topic-image">
-                <img src="${out_none value=base_path /}resources/images/icon-recruiting.png" height="64" width="64" alt="" />
+                <img src="${out value=base_path /}resources/images/icon-recruiting.png" height="64" width="64" alt="" />
             </div>
             <h3>Recrutamento</h3>
             <div class="topic-text">

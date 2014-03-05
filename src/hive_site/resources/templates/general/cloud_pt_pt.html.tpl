@@ -1,6 +1,6 @@
 <div id="content">
     <div id="media">
-        <img src="${out_none value=base_path /}resources/images/illustration-cloud.png" height="300" width="900" alt="" />
+        <img src="${out value=base_path /}resources/images/illustration-cloud.png" height="300" width="900" alt="" />
     </div>
     <h1>CLOUD</h1>
     <p>
@@ -20,7 +20,7 @@
     <div class="topic-area">
         <div class="topic">
             <div class="topic-image">
-                <img src="${out_none value=base_path /}resources/images/icon-migrate.png" height="64" width="64" alt="" />
+                <img src="${out value=base_path /}resources/images/icon-migrate.png" height="64" width="64" alt="" />
             </div>
             <h3>Migração</h3>
             <div class="topic-text">
@@ -31,7 +31,7 @@
         </div>
         <div class="topic">
             <div class="topic-image">
-                <img src="${out_none value=base_path /}resources/images/icon-putonline.png" height="64" width="64" alt="" />
+                <img src="${out value=base_path /}resources/images/icon-putonline.png" height="64" width="64" alt="" />
             </div>
             <h3>Coloque-se online</h3>
             <div class="topic-text">
@@ -43,7 +43,7 @@
         <div class="clear"></div>
         <div class="topic">
             <div class="topic-image">
-                <img src="${out_none value=base_path /}resources/images/icon-optimizeskills.png" height="64" width="64" alt="" />
+                <img src="${out value=base_path /}resources/images/icon-optimizeskills.png" height="64" width="64" alt="" />
             </div>
             <h3>Optimize as suas competências</h3>
             <div class="topic-text">
@@ -54,7 +54,7 @@
         </div>
         <div class="topic">
             <div class="topic-image">
-                <img src="${out_none value=base_path /}resources/images/icon-scalable.png" height="64" width="64" alt="" />
+                <img src="${out value=base_path /}resources/images/icon-scalable.png" height="64" width="64" alt="" />
             </div>
             <h3>Escalável</h3>
             <div class="topic-text">

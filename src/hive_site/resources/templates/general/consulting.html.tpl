@@ -1,6 +1,6 @@
 <div id="content">
     <div id="media">
-        <img src="${out_none value=base_path /}resources/images/illustration-consulting.png" height="300" width="900" alt="" />
+        <img src="${out value=base_path /}resources/images/illustration-consulting.png" height="300" width="900" alt="" />
     </div>
     <h1>CONSULTING</h1>
     <p>Don't you just hate average consulting? Some say if you're not part of the problem, and you're not part of the solution, there is good money to be made in prolonging the problem with bad consulting.</p>
@@ -10,7 +10,7 @@
     <h2>Our Process</h2>
     <div class="two-column-wrapper">
         <div class="two-column-left">
-            <img src="${out_none value=base_path /}resources/images/illustration-process.png" height="400" width="360" />
+            <img src="${out value=base_path /}resources/images/illustration-process.png" height="400" width="360" />
         </div>
         <div class="two-column-right">
             <div class="topic">
@@ -55,7 +55,7 @@
     <div class="topic-area">
         <div class="topic">
             <div class="topic-image">
-                <a href="saas"><img src="${out_none value=base_path /}resources/images/icon-saas.png" height="64" width="64" alt="" /></a>
+                <a href="saas"><img src="${out value=base_path /}resources/images/icon-saas.png" height="64" width="64" alt="" /></a>
             </div>
             <h3><a href="saas">Software as a Service</a></h3>
             <div class="topic-text">
@@ -68,7 +68,7 @@
         </div>
         <div class="topic">
             <div class="topic-image">
-                <a href="cloud"><img src="${out_none value=base_path /}resources/images/icon-cloud.png" height="64" width="64" alt="" /></a>
+                <a href="cloud"><img src="${out value=base_path /}resources/images/icon-cloud.png" height="64" width="64" alt="" /></a>
             </div>
             <h3><a href="cloud">Cloud</a></h3>
             <div class="topic-text">
@@ -82,7 +82,7 @@
         <div class="clear"></div>
         <div class="topic">
             <div class="topic-image">
-                <a href="social"><img src="${out_none value=base_path /}resources/images/icon-social.png" height="64" width="64" alt="" /></a>
+                <a href="social"><img src="${out value=base_path /}resources/images/icon-social.png" height="64" width="64" alt="" /></a>
             </div>
             <h3><a href="social">Social</a></h3>
             <div class="topic-text">
@@ -95,7 +95,7 @@
         </div>
         <div class="topic">
             <div class="topic-image">
-                <a href="mobile"><img src="${out_none value=base_path /}resources/images/icon-mobile.png" height="64" width="64" alt="" /></a>
+                <a href="mobile"><img src="${out value=base_path /}resources/images/icon-mobile.png" height="64" width="64" alt="" /></a>
             </div>
             <h3><a href="mobile">Mobile</a></h3>
             <div class="topic-text">

@@ -1,6 +1,6 @@
 <div id="content">
     <div id="media">
-        <img id="home-illustration" src="${out_none value=base_path /}resources/images/home-illustration.png" width="900" height="430" alt="" />
+        <img id="home-illustration" src="${out value=base_path /}resources/images/home-illustration.png" width="900" height="430" alt="" />
     </div>
     <h1>EXIJA ALGO DIFERENTE</h1>
     <h4>Soluções de software únicas para o seu negócio</h4>

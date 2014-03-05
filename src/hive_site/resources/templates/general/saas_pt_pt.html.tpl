@@ -1,6 +1,6 @@
 <div id="content">
     <div id="media">
-        <img src="${out_none value=base_path /}resources/images/illustration-saas.png" height="300" width="900" alt="" />
+        <img src="${out value=base_path /}resources/images/illustration-saas.png" height="300" width="900" alt="" />
     </div>
     <h1>SOFTWARE AS A SERVICE</h1>
     <p>
@@ -22,7 +22,7 @@
 
         <div class="topic">
             <div class="topic-image">
-                <img src="${out_none value=base_path /}resources/images/icon-cutcosts.png" height="64" width="64" alt="" />
+                <img src="${out value=base_path /}resources/images/icon-cutcosts.png" height="64" width="64" alt="" />
             </div>
             <h3>Reduza os Custos</h3>
             <div class="topic-text">
@@ -35,7 +35,7 @@
 
         <div class="topic">
             <div class="topic-image">
-                <img src="${out_none value=base_path /}resources/images/icon-email.png" height="64" width="64" alt="" />
+                <img src="${out value=base_path /}resources/images/icon-email.png" height="64" width="64" alt="" />
             </div>
             <h3>Serviço Email</h3>
             <div class="topic-text">
@@ -47,7 +47,7 @@
         <div class="clear"></div>
         <div class="topic">
             <div class="topic-image">
-                <img src="${out_none value=base_path /}resources/images/icon-crm.png" height="64" width="64" alt="" />
+                <img src="${out value=base_path /}resources/images/icon-crm.png" height="64" width="64" alt="" />
             </div>
             <h3>Cloud CRM</h3>
             <div class="topic-text">
@@ -58,7 +58,7 @@
         </div>
         <div class="topic">
             <div class="topic-image">
-                <img src="${out_none value=base_path /}resources/images/icon-yourway.png" height="64" width="64" alt="" />
+                <img src="${out value=base_path /}resources/images/icon-yourway.png" height="64" width="64" alt="" />
             </div>
             <h3>À Sua Maneira</h3>
             <div class="topic-text">

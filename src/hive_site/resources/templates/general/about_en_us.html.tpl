@@ -1,6 +1,6 @@
 <div id="content">
     <div id="media">
-        <img src="${out_none value=base_path /}resources/images/illustration-about.png" height="300" width="900" alt="" />
+        <img src="${out value=base_path /}resources/images/illustration-about.png" height="300" width="900" alt="" />
     </div>
     <h1>ABOUT</h1>
     <p>Hive Solutions began in 2008, when two former <b>Microsoft</b> employees got together to make a different kind of technology from what the market was providing. After half a year of initial Research & Development, the project grew with collaborators from companies such as <b>Deloitte</b> and <b>Wipro</b>.</p>

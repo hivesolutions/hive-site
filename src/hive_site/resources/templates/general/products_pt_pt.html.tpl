@@ -1,6 +1,6 @@
 <div id="content">
     <div id="media">
-        <img src="${out_none value=base_path /}resources/images/illustration-products.png" height="300" width="900" alt="" />
+        <img src="${out value=base_path /}resources/images/illustration-products.png" height="300" width="900" alt="" />
     </div>
     <h1>PRODUTOS</h1>
     <p>
@@ -22,7 +22,7 @@
     <div class="topic-area">
         <div class="topic">
             <div class="topic-image">
-                <img src="${out_none value=base_path /}resources/images/icon-extensible.png" height="64" width="64" alt="" />
+                <img src="${out value=base_path /}resources/images/icon-extensible.png" height="64" width="64" alt="" />
             </div>
             <h3>Extensível</h3>
             <div class="topic-text">
@@ -33,7 +33,7 @@
         </div>
         <div class="topic">
             <div class="topic-image">
-                <img src="${out_none value=base_path /}resources/images/icon-nodowntime.png" height="64" width="64" alt="" />
+                <img src="${out value=base_path /}resources/images/icon-nodowntime.png" height="64" width="64" alt="" />
             </div>
             <h3>Sempre Funcional</h3>
             <div class="topic-text">
@@ -45,7 +45,7 @@
         </div>
         <div class="topic">
             <div class="topic-image">
-                <img src="${out_none value=base_path /}resources/images/icon-lessit.png" height="64" width="64" alt="" />
+                <img src="${out value=base_path /}resources/images/icon-lessit.png" height="64" width="64" alt="" />
             </div>
             <h3>Menos Manutenção</h3>
             <div class="topic-text">
@@ -57,7 +57,7 @@
         </div>
         <div class="topic">
             <div class="topic-image">
-                <img src="${out_none value=base_path /}resources/images/icon-moreoutput.png" height="64" width="64" alt="" />
+                <img src="${out value=base_path /}resources/images/icon-moreoutput.png" height="64" width="64" alt="" />
             </div>
             <h3>Melhores Resultados</h3>
             <div class="topic-text">

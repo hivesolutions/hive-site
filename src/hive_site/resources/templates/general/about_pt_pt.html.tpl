@@ -1,6 +1,6 @@
 <div id="content">
     <div id="media">
-        <img src="${out_none value=base_path /}resources/images/illustration-about.png" height="300" width="900" alt="" />
+        <img src="${out value=base_path /}resources/images/illustration-about.png" height="300" width="900" alt="" />
     </div>
     <h1>SOBRE</h1>
     <p>A Hive Solutions foi fundada em 2008, altura em que dois antigos funcionários da <b>Microsoft</b> se juntaram para criar um tipo diferente de tecnologia do que o mercado oferecia. Após meio ano de investigação e desenvolvimento iniciais, o projecto cresceu, atraindo colaboradores de empresas como a <b>Deloitte</b> e a <b>Wipro</b>.</p>

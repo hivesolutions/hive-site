@@ -1,6 +1,6 @@
 <div id="content">
     <div id="media">
-        <img src="${out_none value=base_path /}resources/images/illustration-mobile.png" height="300" width="900" alt="" />
+        <img src="${out value=base_path /}resources/images/illustration-mobile.png" height="300" width="900" alt="" />
     </div>
     <h1>MOBILE</h1>
     <p>
@@ -25,7 +25,7 @@
     <div class="topic-area">
         <div class="topic">
             <div class="topic-image">
-                <img src="${out_none value=base_path /}resources/images/icon-onthemove.png" height="64" width="64" alt="" />
+                <img src="${out value=base_path /}resources/images/icon-onthemove.png" height="64" width="64" alt="" />
             </div>
             <h3>On the move</h3>
             <div class="topic-text">
@@ -36,7 +36,7 @@
         </div>
         <div class="topic">
             <div class="topic-image">
-                <img src="${out_none value=base_path /}resources/images/icon-increaseproductivity.png" height="64" width="64" alt="" />
+                <img src="${out value=base_path /}resources/images/icon-increaseproductivity.png" height="64" width="64" alt="" />
             </div>
             <h3>Increase productivity</h3>
             <div class="topic-text">
@@ -49,7 +49,7 @@
         <div class="clear"></div>
         <div class="topic">
             <div class="topic-image">
-                <img src="${out_none value=base_path /}resources/images/icon-feedback.png" height="64" width="64" alt="" />
+                <img src="${out value=base_path /}resources/images/icon-feedback.png" height="64" width="64" alt="" />
             </div>
             <h3>Feedback</h3>
             <div class="topic-text">
@@ -60,7 +60,7 @@
         </div>
         <div class="topic">
             <div class="topic-image">
-                <img src="${out_none value=base_path /}resources/images/icon-integration.png" height="64" width="64" alt="" />
+                <img src="${out value=base_path /}resources/images/icon-integration.png" height="64" width="64" alt="" />
             </div>
             <h3>Integration</h3>
             <div class="topic-text">

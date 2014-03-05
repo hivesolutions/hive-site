@@ -1,6 +1,6 @@
 <div id="content">
     <div id="media">
-        <img src="${out_none value=base_path /}resources/images/illustration-people.png" height="300" width="900" alt="" />
+        <img src="${out value=base_path /}resources/images/illustration-people.png" height="300" width="900" alt="" />
     </div>
     <h1>PESSOAS</h1>
     <p>
@@ -11,7 +11,7 @@
             <span class="person-name">João Magalhães</span> <span class="person-position">Desenvolvimento Core</span>
         </a>
         <div class="person-image-left">
-            <img src="${out_none value=base_path /}resources/images/photo-joao.png" height="160" width="130" alt="" />
+            <img src="${out value=base_path /}resources/images/photo-joao.png" height="160" width="130" alt="" />
         </div>
         <div class="person-text">
             <p class="person-text-contents">
@@ -25,7 +25,7 @@
             <span class="person-name">Tiago Silva</span> <span class="person-position">Desenvolvimento Core</span>
         </a>
         <div class="person-image-right">
-            <img src="${out_none value=base_path /}resources/images/photo-tiago.png" height="160" width="130" alt="" />
+            <img src="${out value=base_path /}resources/images/photo-tiago.png" height="160" width="130" alt="" />
         </div>
         <div class="person-text">
             <p class="person-text-contents">
@@ -41,7 +41,7 @@
             <span class="person-name">Luís Martinho</span> <span class="person-position">Desenvolvimento de Mobilidade</span>
         </a>
         <div class="person-image-left">
-            <img src="${out_none value=base_path /}resources/images/photo-martinho.png" height="160" width="130" alt="" />
+            <img src="${out value=base_path /}resources/images/photo-martinho.png" height="160" width="130" alt="" />
         </div>
         <div class="person-text">
             <p class="person-text-contents">
@@ -55,7 +55,7 @@
             <span class="person-name">Francisco Castro</span> <span class="person-position">Desenvolvimento de Design</span>
         </a>
         <div class="person-image-right">
-            <img src="${out_none value=base_path /}resources/images/photo-chico.png" height="160" width="130" alt="" />
+            <img src="${out value=base_path /}resources/images/photo-chico.png" height="160" width="130" alt="" />
         </div>
         <div class="person-text">
             <p class="person-text-contents">
@@ -69,7 +69,7 @@
             <span class="person-name">Marco Sousa</span> <span class="person-position">Desenvolvimento de Design</span>
         </a>
         <div class="person-image-left">
-            <img src="${out_none value=base_path /}resources/images/photo-marco.png" height="160" width="130" alt="" />
+            <img src="${out value=base_path /}resources/images/photo-marco.png" height="160" width="130" alt="" />
         </div>
         <div class="person-text">
             <p class="person-text-contents">
