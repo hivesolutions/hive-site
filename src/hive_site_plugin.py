@@ -54,10 +54,10 @@ class HiveSitePlugin(colony.base.system.Plugin):
         "mvc_service"
     ]
     dependencies = [
-        colony.base.system.PluginDependency("pt.hive.colony.plugins.mvc.utils", "1.x.x"),
-        colony.base.system.PluginDependency("pt.hive.colony.plugins.resources.manager", "1.x.x"),
-        colony.base.system.PluginDependency("pt.hive.colony.plugins.client.smtp", "1.x.x"),
-        colony.base.system.PluginDependency("pt.hive.colony.plugins.format.mime", "1.x.x")
+        colony.base.system.PluginDependency("pt.hive.colony.plugins.mvc.utils"),
+        colony.base.system.PluginDependency("pt.hive.colony.plugins.resources.manager"),
+        colony.base.system.PluginDependency("pt.hive.colony.plugins.client.smtp"),
+        colony.base.system.PluginDependency("pt.hive.colony.plugins.format.mime")
     ]
     main_modules = [
         "hive_site.exceptions",
