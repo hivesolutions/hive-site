@@ -81,17 +81,17 @@ class ContactForm(models.Model):
         """
 
         # adds the validation methods to the name attribute
-        self.add_validation_method("name", "not_none", True)
-        self.add_validation_method("name", "not_empty")
+        self.add_validation("name", "not_none", True)
+        self.add_validation("name", "not_empty")
 
         # adds the validation methods to the company attribute
-        self.add_validation_method("company", "not_none", True)
-        self.add_validation_method("company", "not_empty")
+        self.add_validation("company", "not_none", True)
+        self.add_validation("company", "not_empty")
 
         # adds the validation methods to the email attribute
-        self.add_validation_method("email", "not_none", True)
-        self.add_validation_method("email", "is_email")
+        self.add_validation("email", "not_none", True)
+        self.add_validation("email", "is_email")
 
         # adds the validation methods to the problem attribute
-        self.add_validation_method("problem", "not_none", True)
-        self.add_validation_method("problem", "not_empty")
+        self.add_validation("problem", "not_none", True)
+        self.add_validation("problem", "not_empty")
