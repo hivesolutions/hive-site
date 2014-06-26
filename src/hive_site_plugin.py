@@ -60,8 +60,7 @@ class HiveSitePlugin(colony.base.system.Plugin):
         colony.base.system.PluginDependency("pt.hive.colony.plugins.format.mime")
     ]
     main_modules = [
-        "hive_site.exceptions",
-        "hive_site.system"
+        "hive_site"
     ]
 
     hive_site = None
