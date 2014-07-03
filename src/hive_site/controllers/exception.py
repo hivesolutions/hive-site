@@ -16,7 +16,7 @@
 # If you have any questions regarding the terms of this license please
 # refer to <http://www.hive.pt/licenses/>.
 
-__author__ = "João Magalhães <joamag@hive.pt>"
+__author__ = "João Magalhães <joamag@hive.pt> & Luís Martinho <lmartinho@hive.pt> & Tiago Silva <tsilva@hive.pt>"
 """ The author(s) of the module """
 
 __version__ = "1.0.0"
@@ -34,39 +34,13 @@ __copyright__ = "Copyright (c) 2008-2014 Hive Solutions Lda."
 __license__ = "Hive Solutions Confidential Usage License (HSCUL)"
 """ The license for the module """
 
-import colony
+import base
 
-class HiveSiteException(colony.ColonyException):
-    """
-    The hive site exception class.
-    """
+class ExceptionController(base.BaseController):
 
-    message = None
-    """ The exception's message """
-
-class MissingConfiguration(HiveSiteException):
-    """
-    The missing configuration class, used for the notification
-    on the missing of a configuration value.
-    """
-
-    def __init__(self, message):
-        """
-        Constructor of the class.
-
-        @type message: String
-        @param message: The message to be printed.
-        """
-
-        HiveSiteException.__init__(self)
-        self.message = message
-
-    def __str__(self):
-        """
-        Returns the string representation of the class.
-
-        @rtype: String
-        @return: The string representation of the class.
-        """
-
-        return "Missing configuration - %s" % self.message
+    def exception(self, request, message = None, traceback = None):
+        self._template(
+            request = request,
+            partial_page = "exception/exception.html.tpl",
+            exception_message = message
+        )

@@ -78,36 +78,22 @@ class HiveSite(colony.base.system.System):
         """
 
         return (
-            (r"^hive_site/?$", self.main_controller.handle_hive_index, "get"),
-            (r"^hive_site/index$", self.main_controller.handle_hive_index, "get"),
-            (r"^hive_site/contact$", self.main_controller.handle_hive_contact, "get"),
-            (r"^hive_site/contact$", self.main_controller.handle_hive_contact_process, "post"),
-            (r"^hive_site/thankyou$", self.main_controller.handle_hive_thankyou, "get"),
-            (r"^hive_site/products$", self.main_controller.handle_hive_products, "get"),
-            (r"^hive_site/consulting$", self.main_controller.handle_hive_consulting, "get"),
-            (r"^hive_site/saas$", self.main_controller.handle_hive_saas, "get"),
-            (r"^hive_site/cloud$", self.main_controller.handle_hive_cloud, "get"),
-            (r"^hive_site/social$", self.main_controller.handle_hive_social, "get"),
-            (r"^hive_site/mobile$", self.main_controller.handle_hive_mobile, "get"),
-            (r"^hive_site/labs$", self.main_controller.handle_hive_labs, "get"),
-            (r"^hive_site/people$", self.main_controller.handle_hive_people, "get"),
-            (r"^hive_site/about$", self.main_controller.handle_hive_about, "get"),
-            (r"^hive_site/language$", self.main_controller.handle_hive_language, "get")
+            (r"hive_site/?", self.main_controller.index, "get"),
+            (r"hive_site/index", self.main_controller.index, "get"),
+            (r"hive_site/contact", self.main_controller.contact, "get"),
+            (r"hive_site/contact", self.main_controller.contact_process, "post"),
+            (r"hive_site/thankyou", self.main_controller.thankyou, "get"),
+            (r"hive_site/products", self.main_controller.products, "get"),
+            (r"hive_site/consulting", self.main_controller.consulting, "get"),
+            (r"hive_site/saas", self.main_controller.saas, "get"),
+            (r"hive_site/cloud", self.main_controller.cloud, "get"),
+            (r"hive_site/social", self.main_controller.social, "get"),
+            (r"hive_site/mobile", self.main_controller.mobile, "get"),
+            (r"hive_site/labs", self.main_controller.labs, "get"),
+            (r"hive_site/people", self.main_controller.people, "get"),
+            (r"hive_site/about", self.main_controller.about, "get"),
+            (r"hive_site/language", self.main_controller.language, "get")
         )
-
-    def get_communication_patterns(self):
-        """
-        Retrieves the tuple of regular expressions to be used as communication patterns,
-        to the mvc service. The tuple should relate the route with a tuple
-        containing the data handler, the connection changed handler and the name
-        of the connection.
-
-        @rtype: Tuple
-        @return: The tuple of regular expressions to be used as communication patterns,
-        to the mvc service.
-        """
-
-        return ()
 
     def get_resource_patterns(self):
         """

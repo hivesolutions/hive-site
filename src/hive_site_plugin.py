@@ -34,10 +34,9 @@ __copyright__ = "Copyright (c) 2008-2014 Hive Solutions Lda."
 __license__ = "Hive Solutions Confidential Usage License (HSCUL)"
 """ The license for the module """
 
-import colony.base.system
-import colony.base.decorators
+import colony
 
-class HiveSitePlugin(colony.base.system.Plugin):
+class HiveSitePlugin(colony.Plugin):
     """
     The main class for the Hive Site Main plugin.
     """
@@ -48,52 +47,33 @@ class HiveSitePlugin(colony.base.system.Plugin):
     version = "1.0.0"
     author = "Hive Solutions Lda. <development@hive.pt>"
     platforms = [
-        colony.base.system.CPYTHON_ENVIRONMENT
+        colony.CPYTHON_ENVIRONMENT
     ]
     capabilities = [
         "mvc_service"
     ]
     dependencies = [
-        colony.base.system.PluginDependency("pt.hive.colony.plugins.mvc.utils"),
-        colony.base.system.PluginDependency("pt.hive.colony.plugins.resources.manager"),
-        colony.base.system.PluginDependency("pt.hive.colony.plugins.client.smtp"),
-        colony.base.system.PluginDependency("pt.hive.colony.plugins.format.mime")
+        colony.PluginDependency("pt.hive.colony.plugins.mvc.utils"),
+        colony.PluginDependency("pt.hive.colony.plugins.resources.manager"),
+        colony.PluginDependency("pt.hive.colony.plugins.client.smtp"),
+        colony.PluginDependency("pt.hive.colony.plugins.format.mime")
     ]
     main_modules = [
         "hive_site"
     ]
 
-    hive_site = None
-    """ The hive site """
-
-    mvc_utils_plugin = None
-    """ The mvc utils plugin """
-
-    resources_manager_plugin = None
-    """ The resources manager plugin """
-
-    client_smtp_plugin = None
-    """ The client_smtp plugin """
-
-    format_mime_plugin = None
-    """ The format mime plugin """
-
     def load_plugin(self):
-        colony.base.system.Plugin.load_plugin(self)
-        import hive_site.system
-        self.hive_site = hive_site.system.HiveSite(self)
+        colony.Plugin.load_plugin(self)
+        import hive_site
+        self.system = hive_site.HiveSite(self)
 
     def end_load_plugin(self):
-        colony.base.system.Plugin.end_load_plugin(self)
-        self.hive_site.load_components()
+        colony.Plugin.end_load_plugin(self)
+        self.system.load_components()
 
     def unload_plugin(self):
-        colony.base.system.Plugin.unload_plugin(self)
-        self.hive_site.unload_components()
-
-    @colony.base.decorators.inject_dependencies
-    def dependency_injected(self, plugin):
-        colony.base.system.Plugin.dependency_injected(self, plugin)
+        colony.Plugin.unload_plugin(self)
+        self.system.unload_components()
 
     def get_patterns(self):
         """
@@ -106,21 +86,7 @@ class HiveSitePlugin(colony.base.system.Plugin):
         to the mvc service.
         """
 
-        return self.hive_site.get_patterns()
-
-    def get_communication_patterns(self):
-        """
-        Retrieves the tuple of regular expressions to be used as communication patterns,
-        to the mvc service. The tuple should relate the route with a tuple
-        containing the data handler, the connection changed handler and the name
-        of the connection.
-
-        @rtype: Tuple
-        @return: The tuple of regular expressions to be used as communication patterns,
-        to the mvc service.
-        """
-
-        return self.hive_site.get_communication_patterns()
+        return self.system.get_patterns()
 
     def get_resource_patterns(self):
         """
@@ -133,20 +99,4 @@ class HiveSitePlugin(colony.base.system.Plugin):
         to the mvc service.
         """
 
-        return self.hive_site.get_resource_patterns()
-
-    @colony.base.decorators.plugin_inject("pt.hive.colony.plugins.mvc.utils")
-    def set_mvc_utils_plugin(self, mvc_utils_plugin):
-        self.mvc_utils_plugin = mvc_utils_plugin
-
-    @colony.base.decorators.plugin_inject("pt.hive.colony.plugins.resources.manager")
-    def set_resources_manager_plugin(self, resources_manager_plugin):
-        self.resources_manager_plugin = resources_manager_plugin
-
-    @colony.base.decorators.plugin_inject("pt.hive.colony.plugins.client.smtp")
-    def set_client_smtp_plugin(self, client_smtp_plugin):
-        self.client_smtp_plugin = client_smtp_plugin
-
-    @colony.base.decorators.plugin_inject("pt.hive.colony.plugins.format.mime")
-    def set_format_mime_plugin(self, format_mime_plugin):
-        self.format_mime_plugin = format_mime_plugin
+        return self.system.get_resource_patterns()

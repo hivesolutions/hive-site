@@ -34,9 +34,9 @@ __copyright__ = "Copyright (c) 2008-2014 Hive Solutions Lda."
 __license__ = "Hive Solutions Confidential Usage License (HSCUL)"
 """ The license for the module """
 
-import colony.libs.import_util
+import colony
 
-models = colony.libs.import_util.__import__("models")
+models = colony.__import__("models")
 
 class ContactForm(models.Model):
     """
@@ -44,24 +44,24 @@ class ContactForm(models.Model):
     contact form.
     """
 
-    name = {
-        "data_type" : "text"
-    }
+    name = dict(
+        data_type = "text"
+    )
     """ The name of the person reporting the problem """
 
-    company = {
-        "data_type" : "text"
-    }
+    company = dict(
+        data_type = "text"
+    )
     """ The company of the person reporting the problem """
 
-    email = {
-        "data_type" : "text"
-    }
+    email = dict(
+        data_type = "text"
+    )
     """ The email of the person reporting the problem """
 
-    problem = {
-        "data_type" : "text"
-    }
+    problem = dict(
+        data_type = "text"
+    )
     """ The problem reported by the person """
 
     def __init__(self):
