@@ -1,6 +1,6 @@
 <div id="footer-wrapper">
     <div id="footer">
-        ${include file="footer_no_logo_en_us.html.tpl" /}
+        ${include file="footer_no_logo.en_us.html.tpl" /}
     </div>
 </div>
 
