@@ -20,13 +20,13 @@
     <form id="contact-form" action="contact#contact-form" method="post">
         <input type="hidden" name="form" value="true" />
         <input type="text" name="contact_form[name]" id="name" value="Your Name" data-original_value="Your Name"
-        	   data-current_status="${out value=contact_form.name /}" data-error="${out value=contact_form.validation_errors_map.name /}" />
+               data-current_status="${out value=contact_form.name /}" data-error="${out value=contact_form.validation_errors_map.name /}" />
         <input type="text" name="contact_form[company]" id="company" value="Company Name" data-original_value="Company Name"
-        	   data-current_status="${out value=contact_form.company /}" data-error="${out value=contact_form.validation_errors_map.company /}" />
+               data-current_status="${out value=contact_form.company /}" data-error="${out value=contact_form.validation_errors_map.company /}" />
         <input type="text" name="contact_form[email]" id="email" value="Your Email" data-original_value="Your Email"
-        	   data-current_status="${out value=contact_form.email /}" data-error="${out value=contact_form.validation_errors_map.email /}" />
+               data-current_status="${out value=contact_form.email /}" data-error="${out value=contact_form.validation_errors_map.email /}" />
         <textarea name="contact_form[problem]" data-original_value="Describe your problem" data-current_status="${out value=contact_form.problem /}"
-        		  data-error="${out value=contact_form.validation_errors_map.problem /}">Describe your problem</textarea>
+                  data-error="${out value=contact_form.validation_errors_map.problem /}">Describe your problem</textarea>
         <a id="send-form-button">Send</a>
     </form>
 </div>

@@ -20,13 +20,13 @@
     <form id="contact-form" action="contact#contact-form" method="post">
         <input type="hidden" name="form" value="true" />
         <input type="text" name="contact_form[name]" id="name" value="O Seu Nome" data-original_value="O Seu Nome"
-        	   data-current_status="${out value=contact_form.name /}" data-error="${out value=contact_form.validation_errors_map.name /}" />
+               data-current_status="${out value=contact_form.name /}" data-error="${out value=contact_form.validation_errors_map.name /}" />
         <input type="text" name="contact_form[company]" id="company" value="Nome da Empresa" data-original_value="Nome da Empresa"
-        	   data-current_status="${out value=contact_form.company /}" data-error="${out value=contact_form.validation_errors_map.company /}" />
+               data-current_status="${out value=contact_form.company /}" data-error="${out value=contact_form.validation_errors_map.company /}" />
         <input type="text" name="contact_form[email]" id="email" value="O Seu Email" data-original_value="O Seu Email"
-        	   data-current_status="${out value=contact_form.email /}" data-error="${out value=contact_form.validation_errors_map.email /}" />
+               data-current_status="${out value=contact_form.email /}" data-error="${out value=contact_form.validation_errors_map.email /}" />
         <textarea name="contact_form[problem]" data-original_value="Descreva o seu problema" data-current_status="${out value=contact_form.problem /}"
-        		  data-error="${out value=contact_form.validation_errors_map.email /}">Descreva o seu problema</textarea>
+                  data-error="${out value=contact_form.validation_errors_map.email /}">Descreva o seu problema</textarea>
         <a id="send-form-button">Enviar</a>
     </form>
 </div>

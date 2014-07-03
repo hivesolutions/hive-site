@@ -109,9 +109,10 @@ class MainController(base.BaseController):
                 contact_form_error = REQUIRED_FIELDS_MISSING_ERROR_TEXT
             )
 
-        try:
-            # sends the email with the defined arguments
-            self._send_contact_form_email(request, contact_form)
+        # sends the email using the information present in the contact
+        # form this is a synchronous operation and it's execution may
+        # take a large amount of time (use it carefully)
+        try: self._send_contact_form_email(request, contact_form)
         except:
             # in case the debug level is the required
             # to re-throw exception, performs the re-throw
@@ -237,8 +238,8 @@ class MainController(base.BaseController):
         # retrieves the client_smtp plugin
         client_smtp_plugin = self.plugin.client_smtp_plugin
 
-        # retrieves the format mime plugin
-        format_mime_plugin = self.plugin.format_mime_plugin
+        # retrieves the mime plugin
+        mime_plugin = self.plugin.mime_plugin
 
         # retrieves the contact form attributes
         name = contact_form.name
@@ -264,7 +265,7 @@ class MainController(base.BaseController):
         parameters["tls"] = smtp_use_tls
 
         # creates the mime message
-        mime_message = format_mime_plugin.create_message({})
+        mime_message = mime_plugin.create_message({})
 
         # encodes the received values into the default encoding
         name_encoded = name.encode("utf-8")
