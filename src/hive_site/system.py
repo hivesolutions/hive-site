@@ -51,7 +51,8 @@ class HiveSite(colony.base.system.System):
         mvc_utils_plugin = self.plugin.mvc_utils_plugin
 
         # creates the models classes then creates the controllers
-        mvc_utils_plugin.assign_models_controllers(self, self.plugin, {})
+        # this operation should properly load and start the components
+        mvc_utils_plugin.assign_models_controllers(self, self.plugin)
 
     def unload_components(self):
         """
@@ -63,8 +64,8 @@ class HiveSite(colony.base.system.System):
         mvc_utils_plugin = self.plugin.mvc_utils_plugin
 
         # destroys the models and then destroy the controllers,
-        # unregistering them from the internal structures
-        mvc_utils_plugin.unassign_models_controllers(self, {})
+        # unregistering them from the internal structures as expected
+        mvc_utils_plugin.unassign_models_controllers(self)
 
     def get_patterns(self):
         """
@@ -106,12 +107,11 @@ class HiveSite(colony.base.system.System):
         to the mvc service.
         """
 
-        # retrieves the plugin manager
+        # retrieves the plugin manager and uses it to retrieve
+        # the colony site plugin path
         plugin_manager = self.plugin.manager
-
-        # retrieves the plugin path
         plugin_path = plugin_manager.get_plugin_path_by_id(self.plugin.id)
 
         return (
-            (r"^hive_site/resources/.+$", (plugin_path + "/hive_site/resources/extras", "hive_site/resources")),
+            (r"hive_site/resources/.+", (plugin_path + "/hive_site/resources/extras", "hive_site/resources")),
         )
