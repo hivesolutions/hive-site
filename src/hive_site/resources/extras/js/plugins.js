@@ -405,7 +405,7 @@
                 if (currentValue == originalValue) {
                     // sets the element value to empty
                     // avoids sending the default (original value)
-                    elementReference.va("");
+                    elementReference.val("");
                 }
             });
 
