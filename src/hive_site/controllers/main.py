@@ -65,12 +65,8 @@ TECHNICAL_PROBLEMS_WHILE_SENDING_ERROR_TEXT = "Technical problems while sending 
 
 models = colony.__import__("models")
 mvc_utils = colony.__import__("mvc_utils")
-controllers = colony.__import__("controllers")
 
 class MainController(base.BaseController):
-    """
-    The hive site controller.
-    """
 
     @mvc_utils.serialize
     def index(self, request):
