@@ -40,6 +40,8 @@ import colony
 
 import hive_site
 
+import base
+
 DATE_TIME_FORMAT_VALUE = "%a, %d %b %Y %H:%M:%S +0000 (UTC)"
 """ The format for the displayed date times """
 
@@ -65,7 +67,7 @@ models = colony.__import__("models")
 mvc_utils = colony.__import__("mvc_utils")
 controllers = colony.__import__("controllers")
 
-class MainController(controllers.Controller):
+class MainController(base.BaseController):
     """
     The hive site controller.
     """
@@ -227,8 +229,8 @@ class MainController(controllers.Controller):
         self.redirect_back(request, "index")
 
     def _process_contact(self, request, contact):
-        contact_form = models.ContactForm.new(contact)
-        _model_valid = contact_form.validate()
+        contact_form = models.ContactForm.new(map = contact)
+        contact_form.validate()
         return contact_form
 
     def _send_contact_form_email(self, request, contact_form):
