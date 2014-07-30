@@ -45,22 +45,22 @@ class ContactForm(models.Model):
     """
 
     name = dict(
-        data_type = "text"
+        type = "text"
     )
     """ The name of the person reporting the problem """
 
     company = dict(
-        data_type = "text"
+        type = "text"
     )
     """ The company of the person reporting the problem """
 
     email = dict(
-        data_type = "text"
+        type = "text"
     )
     """ The email of the person reporting the problem """
 
     problem = dict(
-        data_type = "text"
+        type = "text"
     )
     """ The problem reported by the person """
 
