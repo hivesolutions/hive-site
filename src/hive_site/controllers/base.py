@@ -69,7 +69,7 @@ class BaseController(controllers.Controller):
         locale = self.get_locale(
             request,
             available_locales = AVAILABLE_LOCALES,
-            default_locale = ALIAS_LOCALES
+            alias_locale = ALIAS_LOCALES
         )
         return self.retrieve_template_file(
             file_path = template,
