@@ -40,7 +40,7 @@ import colony
 
 import hive_site
 
-import base
+from .base import BaseController
 
 DATE_TIME_FORMAT_VALUE = "%a, %d %b %Y %H:%M:%S +0000 (UTC)"
 """ The format for the displayed date times """
@@ -66,7 +66,7 @@ TECHNICAL_PROBLEMS_WHILE_SENDING_ERROR_TEXT = "Technical problems while sending 
 models = colony.__import__("models")
 mvc_utils = colony.__import__("mvc_utils")
 
-class MainController(base.BaseController):
+class MainController(BaseController):
 
     @mvc_utils.serialize
     def index(self, request):
