@@ -334,6 +334,15 @@ class MainController(BaseController):
         smtp_user_data = smtp_user and smtp_user.data or None
         smtp_password_data = smtp_password and smtp_password.data or None
 
+        # uses the base configuration values to try to retrieve the
+        # smtp attributes, defaulting to the the pre-defined resource
+        # based values in case the values are not found
+        smtp_server_data = colony.conf("SMTP_HOST", smtp_server_data)
+        smtp_port_data = colony.conf("SMTP_PORT", smtp_port_data, cast = int)
+        smtp_use_tls_data = colony.conf("SMTP_TLS", smtp_use_tls_data, cast = bool)
+        smtp_user_data = colony.conf("SMTP_USER", smtp_user_data)
+        smtp_password_data = colony.conf("SMTP_PASSWORD", smtp_password_data)
+
         # returns the smtp attributes as a set of tuple values to
         # be unpacked in the calling method
         return (
