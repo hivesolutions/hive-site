@@ -339,7 +339,7 @@ class MainController(BaseController):
         # based values in case the values are not found
         smtp_server_data = colony.conf("SMTP_HOST", smtp_server_data)
         smtp_port_data = colony.conf("SMTP_PORT", smtp_port_data, cast = int)
-        smtp_use_tls_data = colony.conf("SMTP_TLS", smtp_use_tls_data, cast = bool)
+        smtp_use_tls_data = colony.conf("SMTP_STARTTLS", smtp_use_tls_data, cast = bool)
         smtp_user_data = colony.conf("SMTP_USER", smtp_user_data)
         smtp_password_data = colony.conf("SMTP_PASSWORD", smtp_password_data)
 
