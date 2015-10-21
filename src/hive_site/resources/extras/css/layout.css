@@ -49,7 +49,7 @@ body {
     background: #999999 url(../images/body-background.jpg);
     font-family: Rockwell, Arial;
     margin: 0px 0px 40px 0px;
-    padding: 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 a {
@@ -94,8 +94,8 @@ p {
 }
 
 ul {
-    margin: 0px;
-    padding: 0px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 ul li {
@@ -452,7 +452,7 @@ textarea.invalid {
     color: #214c8f;
     font-size: 11pt;
     font-weight: normal;
-    margin: 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 .topic p {
@@ -469,7 +469,7 @@ textarea.invalid {
 
 #home-topic-area .topic {
     float: left;
-    margin: 0px;
+    margin: 0px 0px 0px 0px;
     width: 320px;
 }
 
@@ -483,7 +483,7 @@ textarea.invalid {
     color: #214c8f;
     font-size: 11pt;
     font-weight: normal;
-    margin: 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 #home-topic-area .topic p {
@@ -567,7 +567,7 @@ textarea.invalid {
     color: #214c8f;
     font-size: 18pt;
     font-weight: normal;
-    margin: 0;
+    margin: 0px 0px 0px 0px;
     text-align: center;
 }
 
@@ -575,7 +575,7 @@ textarea.invalid {
     color: #7a94bc;
     font-size: 11pt;
     font-weight: normal;
-    margin: 0;
+    margin: 0px 0px 0px 0px;
     margin-left: 6px;
     text-align: center;
 }
