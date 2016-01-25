@@ -46,9 +46,10 @@ jQuery(document).ready(function() {
 
     // creates the slideshow
     jQuery("#screenshots-button").slideshow({
-        screenshotsPrefix : "resources/screenshots/",
-        screenshots : ["frontdoor_1.png", "frontdoor_2.png",
-                "frontdoor_3.png", "frontdoor_4.png", "frontdoor_5.png"]
+        screenshotsPrefix: "resources/screenshots/",
+        screenshots: ["frontdoor_1.png", "frontdoor_2.png",
+            "frontdoor_3.png", "frontdoor_4.png", "frontdoor_5.png"
+        ]
     });
 
     // retrieves the portfolio slider contents
@@ -61,84 +62,82 @@ jQuery(document).ready(function() {
     var portfolioDataParsed = jQuery("#portfolio-data").parseData();
 
     // retrieves the portfolio data set
-    var portfolioDataSets = portfolioDataParsed != null
-            ? portfolioDataParsed["set"]
-            : [];
+    var portfolioDataSets = portfolioDataParsed != null ? portfolioDataParsed["set"] : [];
 
     // creates the slider
     jQuery("#portfolio-slider").slider("default", {
-                "contents" : portfolioSliderContents,
-                "selector" : portfolioSliderSelector,
-                "sets" : portfolioDataSets
-            });
+        "contents": portfolioSliderContents,
+        "selector": portfolioSliderSelector,
+        "sets": portfolioDataSets
+    });
 
     // iterates over each error
     jQuery(".form-error").each(function(index, element) {
-                // retrieves the element reference
-                var elementReference = jQuery(element);
+        // retrieves the element reference
+        var elementReference = jQuery(element);
 
-                // retrieves the current status
-                var currentStatus = elementReference.attr("data-current_status");
+        // retrieves the current status
+        var currentStatus = elementReference.attr("data-current_status");
 
-                // in case there is a status defined
-                if (currentStatus != "") {
-                    // shows the value
-                    elementReference.addClass("visible");
-                }
-            });
+        // in case there is a status defined
+        if (currentStatus != "") {
+            // shows the value
+            elementReference.addClass("visible");
+        }
+    });
 
     // registers for the click event
     jQuery("#screenshots-button").click(function() {
-                jQuery.scrollTo(jQuery("#jquery-slideshow"), 800, {
-                            offset : {
-                                top : -50,
-                                left : 0
-                            }
-                        });
-            });
+        jQuery.scrollTo(jQuery("#jquery-slideshow"), 800, {
+            offset: {
+                top: -50,
+                left: 0
+            }
+        });
+    });
 
     // registers for the click event
     jQuery("#find-us-location-button").click(function(event) {
-                // retrieves the map balloon
-                var mapBallon = jQuery("#map-balloon");
+        // retrieves the map balloon
+        var mapBallon = jQuery("#map-balloon");
 
-                // in case the map balloon is visible
-                if (mapBallon.is(":visible")) {
-                    // fades out the map balloon
-                    mapBallon.fadeOut(150);
-                } else {
-                    // fades in the map balloon
-                    mapBallon.fadeIn(250);
-                }
-            });
+        // in case the map balloon is visible
+        if (mapBallon.is(":visible")) {
+            // fades out the map balloon
+            mapBallon.fadeOut(150);
+        } else {
+            // fades in the map balloon
+            mapBallon.fadeIn(250);
+        }
+    });
 
     // registers for the mouse enter event
     jQuery("#blog-button").mouseenter(function(event) {
-                jQuery("#blog-balloon").show();
-            });
+        jQuery("#blog-balloon").show();
+    });
 
     // registers for the mouse leave event
     jQuery("#blog-button").mouseleave(function(event) {
-                jQuery("#blog-balloon").hide();
-            });
+        jQuery("#blog-balloon").hide();
+    });
 
     // registers for the mouse enter event
     jQuery("#twitter-button").mouseenter(function(event) {
-                jQuery("#twitter-balloon").show();
-            });
+        jQuery("#twitter-balloon").show();
+    });
 
     // registers for the mouse leave event
     jQuery("#twitter-button").mouseleave(function(event) {
-                jQuery("#twitter-balloon").hide();
-            });
+        jQuery("#twitter-balloon").hide();
+    });
 
     // registers for the mouse enter event
     jQuery("#facebook-button").mouseenter(function(event) {
-                jQuery("#facebook-balloon").show();
-            });
+        jQuery("#facebook-balloon").show();
+    });
 
     // registers for the mouse leave event
     jQuery("#facebook-button").mouseleave(function(event) {
-                jQuery("#facebook-balloon").hide();
-            });
+        jQuery("#facebook-balloon").hide();
+    });
 });

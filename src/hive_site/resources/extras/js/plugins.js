@@ -86,76 +86,76 @@
         var _registerHandlers = function() {
             // registers for the focus event
             matchedObject.focus(function(event) {
-                        // retrieves the element
-                        var element = jQuery(this);
+                // retrieves the element
+                var element = jQuery(this);
 
-                        // retrieves the current value
-                        var currentValue = element.val();
+                // retrieves the current value
+                var currentValue = element.val();
 
-                        // retrieves the original value
-                        var originalValue = element.attr("data-original_value");
+                // retrieves the original value
+                var originalValue = element.attr("data-original_value");
 
-                        // retrieves the current error
-                        var currentError = element.attr("data-error");
+                // retrieves the current error
+                var currentError = element.attr("data-error");
 
-                        // retrieves the current status
-                        var currentStatus = element.attr("data-current_status");
+                // retrieves the current status
+                var currentStatus = element.attr("data-current_status");
 
-                        // in case the current value is
-                        // the original one
-                        if (currentValue == originalValue) {
-                            // sets the value attribute to empty
-                            element.val("");
+                // in case the current value is
+                // the original one
+                if (currentValue == originalValue) {
+                    // sets the value attribute to empty
+                    element.val("");
 
-                            // removes the lower class
-                            element.removeClass("lower");
+                    // removes the lower class
+                    element.removeClass("lower");
 
-                            // in case there is an error
-                            if (currentError != "") {
-                                // removes the invalid mode class
-                                element.removeClass("invalid");
-                            }
-                        }
+                    // in case there is an error
+                    if (currentError != "") {
+                        // removes the invalid mode class
+                        element.removeClass("invalid");
+                    }
+                }
 
-                        // adds the active class
-                        element.addClass("active");
-                    });
+                // adds the active class
+                element.addClass("active");
+            });
 
             // registers for the blur event
             matchedObject.blur(function(event) {
-                        // retrieves the element
-                        var element = jQuery(this);
+                // retrieves the element
+                var element = jQuery(this);
 
-                        // retrieves the current value
-                        var currentValue = element.val();
+                // retrieves the current value
+                var currentValue = element.val();
 
-                        // retrieves the original value
-                        var originalValue = element.attr("data-original_value");
+                // retrieves the original value
+                var originalValue = element.attr("data-original_value");
 
-                        // retrieves the current error
-                        var currentError = element.attr("data-error");
+                // retrieves the current error
+                var currentError = element.attr("data-error");
 
-                        // retrieves the current status
-                        var currentStatus = element.attr("data-current_status");
+                // retrieves the current status
+                var currentStatus = element.attr("data-current_status");
 
-                        // in case the current value is empty
-                        if (currentValue == "") {
-                            // sets the value attribute to the original value
-                            element.val(originalValue);
+                // in case the current value is empty
+                if (currentValue == "") {
+                    // sets the value attribute to the original value
+                    element.val(originalValue);
 
-                            // adds the lower class
-                            element.addClass("lower");
+                    // adds the lower class
+                    element.addClass("lower");
 
-                            // in case there is an error
-                            if (currentError != "") {
-                                // adds the invalid mode class
-                                element.addClass("invalid");
-                            }
-                        }
+                    // in case there is an error
+                    if (currentError != "") {
+                        // adds the invalid mode class
+                        element.addClass("invalid");
+                    }
+                }
 
-                        // removes the active class
-                        element.removeClass("active");
-                    });
+                // removes the active class
+                element.removeClass("active");
+            });
         };
 
         // initializes the plugin
@@ -219,9 +219,9 @@
                         // sets the timeout function to change the
                         // text area value
                         setTimeout(function() {
-                                    elementReference.get(0).value = currentStatus;
-                                    elementReference.removeClass("lower");
-                                }, 10);
+                            elementReference.get(0).value = currentStatus;
+                            elementReference.removeClass("lower");
+                        }, 10);
                     } else {
                         // sets the text area value
                         elementReference.get(0).value = currentStatus;
@@ -246,76 +246,76 @@
         var _registerHandlers = function() {
             // registers for the focus event
             matchedObject.focus(function(event) {
-                        // retrieves the element
-                        var element = jQuery(this);
+                // retrieves the element
+                var element = jQuery(this);
 
-                        // retrieves the current value
-                        var currentValue = element.get(0).value;
+                // retrieves the current value
+                var currentValue = element.get(0).value;
 
-                        // retrieves the original value
-                        var originalValue = element.attr("data-original_value");
+                // retrieves the original value
+                var originalValue = element.attr("data-original_value");
 
-                        // retrieves the current error
-                        var currentError = element.attr("data-error");
+                // retrieves the current error
+                var currentError = element.attr("data-error");
 
-                        // retrieves the current status
-                        var currentStatus = element.attr("data-current_status");
+                // retrieves the current status
+                var currentStatus = element.attr("data-current_status");
 
-                        // in case the current value is
-                        // the original one
-                        if (currentValue == originalValue) {
-                            // sets teh value reference value as empty
-                            element.get(0).value = "";
+                // in case the current value is
+                // the original one
+                if (currentValue == originalValue) {
+                    // sets teh value reference value as empty
+                    element.get(0).value = "";
 
-                            // removes the lower class
-                            element.removeClass("lower");
+                    // removes the lower class
+                    element.removeClass("lower");
 
-                            // in case there is an error
-                            if (currentError != "") {
-                                // removes the invalid mode class
-                                element.removeClass("invalid");
-                            }
-                        }
+                    // in case there is an error
+                    if (currentError != "") {
+                        // removes the invalid mode class
+                        element.removeClass("invalid");
+                    }
+                }
 
-                        // adds the active class
-                        element.addClass("active");
-                    });
+                // adds the active class
+                element.addClass("active");
+            });
 
             // registers for the blur event
             matchedObject.blur(function(event) {
-                        // retrieves the element
-                        var element = jQuery(this);
+                // retrieves the element
+                var element = jQuery(this);
 
-                        // retrieves the current value
-                        var currentValue = element.get(0).value;
+                // retrieves the current value
+                var currentValue = element.get(0).value;
 
-                        // retrieves the original value
-                        var originalValue = element.attr("data-original_value");
+                // retrieves the original value
+                var originalValue = element.attr("data-original_value");
 
-                        // retrieves the current error
-                        var currentError = element.attr("data-error");
+                // retrieves the current error
+                var currentError = element.attr("data-error");
 
-                        // retrieves the current status
-                        var currentStatus = element.attr("data-current_status");
+                // retrieves the current status
+                var currentStatus = element.attr("data-current_status");
 
-                        // in case the current value is empty
-                        if (currentValue == "") {
-                            // sets teh value reference value as the original value
-                            element.get(0).value = originalValue;
+                // in case the current value is empty
+                if (currentValue == "") {
+                    // sets teh value reference value as the original value
+                    element.get(0).value = originalValue;
 
-                            // adds the lower class
-                            element.addClass("lower");
+                    // adds the lower class
+                    element.addClass("lower");
 
-                            // in case there is an error
-                            if (currentError != "") {
-                                // adds the invalid mode class
-                                element.addClass("invalid");
-                            }
-                        }
+                    // in case there is an error
+                    if (currentError != "") {
+                        // adds the invalid mode class
+                        element.addClass("invalid");
+                    }
+                }
 
-                        // removes the active class
-                        element.removeClass("active");
-                    });
+                // removes the active class
+                element.removeClass("active");
+            });
         };
 
         // initializes the plugin
@@ -352,8 +352,7 @@
         /**
          * Creates the necessary html for the component.
          */
-        var _appendHtml = function() {
-        };
+        var _appendHtml = function() {};
 
         /**
          * Registers the event handlers for the created objects.
@@ -361,26 +360,26 @@
         var _registerHandlers = function() {
             // registers for the click event
             matchedObject.click(function() {
-                        // in case the form is already being sent
-                        if (matchedObject.attr("sending") == "true") {
-                            return;
-                        }
+                // in case the form is already being sent
+                if (matchedObject.attr("sending") == "true") {
+                    return;
+                }
 
-                        // retrieves the parent form
-                        var parentForm = matchedObject.parents("form");
+                // retrieves the parent form
+                var parentForm = matchedObject.parents("form");
 
-                        // resets the text values
-                        __resetTextValues(matchedObject, options, parentForm);
+                // resets the text values
+                __resetTextValues(matchedObject, options, parentForm);
 
-                        // sets the sending flag as true
-                        matchedObject.attr("sending", "true");
+                // sets the sending flag as true
+                matchedObject.attr("sending", "true");
 
-                        // changes the label
-                        matchedObject.html("Sending...");
+                // changes the label
+                matchedObject.html("Sending...");
 
-                        // submits the parent form
-                        parentForm.submit();
-                    });
+                // submits the parent form
+                parentForm.submit();
+            });
         };
 
         var __resetTextValues = function(matchedObject, options, parentForm) {
