@@ -62,7 +62,8 @@ jQuery(document).ready(function() {
     var portfolioDataParsed = jQuery("#portfolio-data").parseData();
 
     // retrieves the portfolio data set
-    var portfolioDataSets = portfolioDataParsed != null ? portfolioDataParsed["set"] : [];
+    var portfolioDataSets = portfolioDataParsed !== null && portfolioDataParsed !== undefined ?
+        portfolioDataParsed["set"] : [];
 
     // creates the slider
     jQuery("#portfolio-slider").slider("default", {
@@ -80,7 +81,7 @@ jQuery(document).ready(function() {
         var currentStatus = elementReference.attr("data-current_status");
 
         // in case there is a status defined
-        if (currentStatus != "") {
+        if (currentStatus !== "") {
             // shows the value
             elementReference.addClass("visible");
         }

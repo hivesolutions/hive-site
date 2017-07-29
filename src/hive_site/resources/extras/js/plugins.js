@@ -62,10 +62,10 @@
                 var originalValue = elementReference.attr("data-original_value");
 
                 // in case there is an error
-                if (currentError != "") {
+                if (currentError !== "") {
                     // adds the invalid mode class
                     elementReference.addClass("invalid");
-                } else if (currentStatus != "") {
+                } else if (currentStatus !== "") {
                     elementReference.val(currentStatus);
                 }
 
@@ -73,7 +73,7 @@
                 var currentValue = elementReference.val();
 
                 // in case the current value is the original one
-                if (currentValue == originalValue) {
+                if (currentValue === originalValue) {
                     // adds the lower (background) mode class
                     elementReference.addClass("lower");
                 }
@@ -103,7 +103,7 @@
 
                 // in case the current value is
                 // the original one
-                if (currentValue == originalValue) {
+                if (currentValue === originalValue) {
                     // sets the value attribute to empty
                     element.val("");
 
@@ -111,7 +111,7 @@
                     element.removeClass("lower");
 
                     // in case there is an error
-                    if (currentError != "") {
+                    if (currentError !== "") {
                         // removes the invalid mode class
                         element.removeClass("invalid");
                     }
@@ -139,7 +139,7 @@
                 var currentStatus = element.attr("data-current_status");
 
                 // in case the current value is empty
-                if (currentValue == "") {
+                if (currentValue === "") {
                     // sets the value attribute to the original value
                     element.val(originalValue);
 
@@ -147,7 +147,7 @@
                     element.addClass("lower");
 
                     // in case there is an error
-                    if (currentError != "") {
+                    if (currentError !== "") {
                         // adds the invalid mode class
                         element.addClass("invalid");
                     }
@@ -208,10 +208,10 @@
                 var originalValue = elementReference.attr("data-original_value");
 
                 // in case there is an error
-                if (currentError != "") {
+                if (currentError !== "") {
                     // adds the invalid mode class
                     elementReference.addClass("invalid");
-                } else if (currentStatus != "") {
+                } else if (currentStatus !== "") {
                     // in case the browser is webkit based the text area
                     // requires some time before it is changed
                     // otherwise the browser might crash
@@ -232,7 +232,7 @@
                 var currentValue = elementReference.get(0).value;
 
                 // in case the current value is the original one
-                if (currentValue == originalValue) {
+                if (currentValue === originalValue) {
                     // adds the lower (background) mode class
                     elementReference.addClass("lower");
                 }
@@ -263,7 +263,7 @@
 
                 // in case the current value is
                 // the original one
-                if (currentValue == originalValue) {
+                if (currentValue === originalValue) {
                     // sets teh value reference value as empty
                     element.get(0).value = "";
 
@@ -271,7 +271,7 @@
                     element.removeClass("lower");
 
                     // in case there is an error
-                    if (currentError != "") {
+                    if (currentError !== "") {
                         // removes the invalid mode class
                         element.removeClass("invalid");
                     }
@@ -299,7 +299,7 @@
                 var currentStatus = element.attr("data-current_status");
 
                 // in case the current value is empty
-                if (currentValue == "") {
+                if (currentValue === "") {
                     // sets teh value reference value as the original value
                     element.get(0).value = originalValue;
 
@@ -307,7 +307,7 @@
                     element.addClass("lower");
 
                     // in case there is an error
-                    if (currentError != "") {
+                    if (currentError !== "") {
                         // adds the invalid mode class
                         element.addClass("invalid");
                     }
@@ -361,7 +361,7 @@
             // registers for the click event
             matchedObject.click(function() {
                 // in case the form is already being sent
-                if (matchedObject.attr("sending") == "true") {
+                if (matchedObject.attr("sending") === "true") {
                     return;
                 }
 
@@ -401,7 +401,7 @@
                 var originalValue = elementReference.attr("data-original_value");
 
                 // in case the current value is the original one
-                if (currentValue == originalValue) {
+                if (currentValue === originalValue) {
                     // sets the element value to empty
                     // avoids sending the default (original value)
                     elementReference.val("");
@@ -420,7 +420,7 @@
                 var originalValue = elementReference.attr("data-original_value");
 
                 // in case the current value is the original one
-                if (currentValue == originalValue) {
+                if (currentValue === originalValue) {
                     // sets the element value to empty
                     // avoids sending the default (original value)
                     elementReference.get(0).value = "";
