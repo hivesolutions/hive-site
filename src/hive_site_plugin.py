@@ -81,8 +81,8 @@ class HiveSitePlugin(colony.Plugin):
         to the mvc service. The tuple should relate the route with the handler
         method/function.
 
-        @rtype: Tuple
-        @return: The tuple of regular expressions to be used as patterns,
+        :rtype: Tuple
+        :return: The tuple of regular expressions to be used as patterns,
         to the mvc service.
         """
 
@@ -94,8 +94,8 @@ class HiveSitePlugin(colony.Plugin):
         to the mvc service. The tuple should relate the route with the base
         file system path to be used.
 
-        @rtype: Tuple
-        @return: The tuple of regular expressions to be used as resource patterns,
+        :rtype: Tuple
+        :return: The tuple of regular expressions to be used as resource patterns,
         to the mvc service.
         """
 
