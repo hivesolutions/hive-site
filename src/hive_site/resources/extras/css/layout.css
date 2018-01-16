@@ -118,6 +118,11 @@ input {
     height: 48px;
     margin-bottom: 20px;
     outline: none;
+    -o-outline: none;
+    -ms-outline: none;
+    -moz-outline: none;
+    -khtml-outline: none;
+    -webkit-outline: none;
     padding: 1px 20px 1px 20px;
     width: 490px;
 }
@@ -142,6 +147,11 @@ textarea {
     font-size: 20pt;
     height: 206px;
     outline: none;
+    -o-outline: none;
+    -ms-outline: none;
+    -moz-outline: none;
+    -khtml-outline: none;
+    -webkit-outline: none;
     overflow: visible;
     padding-bottom: 12px;
     padding-left: 20px;
