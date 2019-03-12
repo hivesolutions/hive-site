@@ -105,11 +105,12 @@ class MainController(BaseController):
                 contact_form_error = REQUIRED_FIELDS_MISSING_ERROR_TEXT
             )
 
-        # sends the email using the information present in the contact
-        # form this is a synchronous operation and it's execution may
-        # take a large amount of time (use it carefully)
-        try: self._send_contact_form_email(request, contact_form)
-        except:
+        try:
+            # sends the email using the information present in the contact
+            # form this is a synchronous operation and it's execution may
+            # take a large amount of time (use it carefully)
+            self._send_contact_form_email(request, contact_form)
+        except Exception:
             # in case the debug level is the required
             # to re-throw exception, performs the re-throw
             if request.is_debug(): raise
