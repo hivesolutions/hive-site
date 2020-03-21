@@ -47,7 +47,7 @@ class HiveSite(colony.System):
         This load should occur only after the dependencies are loaded.
         """
 
-        # retrieves the mvc utils plugin
+        # retrieves the MVC utils plugin
         mvc_utils_plugin = self.plugin.mvc_utils_plugin
 
         # creates the models classes then creates the controllers
@@ -60,7 +60,7 @@ class HiveSite(colony.System):
         This load should occur the earliest possible in the unloading process.
         """
 
-        # retrieves the mvc utils plugin
+        # retrieves the MVC utils plugin
         mvc_utils_plugin = self.plugin.mvc_utils_plugin
 
         # destroys the models and then destroy the controllers,
@@ -70,12 +70,12 @@ class HiveSite(colony.System):
     def get_patterns(self):
         """
         Retrieves the tuple of regular expressions to be used as patterns,
-        to the mvc service. The tuple should relate the route with the handler
+        to the MVC service. The tuple should relate the route with the handler
         method/function.
 
         :rtype: Tuple
         :return: The tuple of regular expressions to be used as patterns,
-        to the mvc service.
+        to the MVC service.
         """
 
         return (
@@ -99,12 +99,12 @@ class HiveSite(colony.System):
     def get_resource_patterns(self):
         """
         Retrieves the tuple of regular expressions to be used as resource patterns,
-        to the mvc service. The tuple should relate the route with the base
+        to the MVC service. The tuple should relate the route with the base
         file system path to be used.
 
         :rtype: Tuple
         :return: The tuple of regular expressions to be used as resource patterns,
-        to the mvc service.
+        to the MVC service.
         """
 
         # retrieves the plugin manager and uses it to retrieve
